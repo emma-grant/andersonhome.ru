@@ -393,7 +393,45 @@ section {
 }
 
 
-@media (min-width: 600px) {
+@media (max-width: 1280px) and (min-width: 601px) {
+  html {
+    font-size: 9px;
+    color: #ffffffbe;
+  }
+
+  .skills {
+    display: grid;
+    grid-template-areas:
+      "a1 a1 a2 a3"
+      "a4 a5 a5 a6"
+      "a7 a8 a9 a6";
+    /* высота столбцов */
+    grid-template-rows: 33.3vh 33.3vh 33.3vh;
+    /* ширина столбцов */
+    grid-template-columns: repeat(25%);
+    /* gap: 5px; */
+    padding: 5px 5px 5px 5px;
+  }
+  .btn {
+    gap: 30px;
+    width: 100px;
+    height: 20px;
+    font-size: 10px;
+    background-color: #ffffff12;
+    border: 1.5px solid rgba(255, 255, 255, 0.756);
+    text-align: center;
+    color: #ffffffa4;
+  }
+  .skills-title {
+    font-size: 15px;
+    position: absolute;
+    text-decoration: none;
+    color: #ffffff;
+    transition: color 0.5s;
+    padding: auto;
+  }
+}
+@media (max-width: 600px) and (min-width: 599px) {
   .skills-title {
     font-size: 12px;
     position: absolute;
@@ -416,8 +454,7 @@ section {
     text-align: center;
     color: #ffffffa4;
   }
-
-.skills {
+  .skills {
     display: grid;
     grid-template-areas:
       "a1 a2"
@@ -430,7 +467,7 @@ section {
     grid-template-rows: 50vh 50vh 50vh 50vh 50vh 50vh;
     /* ширина столбцов */
     grid-template-columns: repeat(50vw);
-    /* gap: 5px; */
-    padding: 5px 5px 5px 5px;
+    gap: 1px;
+    /* padding: 10px; */
   }
 }

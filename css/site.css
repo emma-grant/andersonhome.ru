@@ -29,7 +29,7 @@ body {
   position: absolute;
   background-position: center;
   background-size: cover;
-  background-image: url(../grid-template-init-project/assets/img/img-header.png);
+  background-image: url(img/img-header.png);
 }
 
 @keyframes backfon {
@@ -240,7 +240,7 @@ section {
   top: 0px;
   bottom: 0px;
   left: 0px;
-  background-image: url(../grid-template-init-project/assets/img/img-html.png);
+  background-image: url(img/img-html.png);
   background-position: center;
   background-size: cover;
 }
@@ -250,7 +250,7 @@ section {
   top: 0px;
   bottom: 0px;
   left: 0px;
-  background-image: url(../grid-template-init-project/assets/img/img-css.png);
+  background-image: url(img/img-css.png);
   background-position: center;
   background-size: cover;
 }
@@ -260,7 +260,7 @@ section {
   top: 0px;
   bottom: 0px;
   left: 0px;
-  background-image: url(../grid-template-init-project/assets/img/img-markup.png);
+  background-image: url(img/img-markup.png);
   background-position: center;
   background-size: cover;
 }
@@ -270,7 +270,7 @@ section {
   top: 0px;
   bottom: 0px;
   left: 0px;
-  background-image: url(../grid-template-init-project/assets/img/img-webdesign.png);
+  background-image: url(img/img-webdesign.png);
   background-position: center;
   background-size: cover;
 }
@@ -280,7 +280,7 @@ section {
   top: 0px;
   bottom: 0px;
   left: 0px;
-  background-image: url(../grid-template-init-project/assets/img/img-qa.png);
+  background-image: url(img/img-qa.png);
   background-position: center;
   background-size: cover;
 }
@@ -290,7 +290,7 @@ section {
   top: 0px;
   bottom: 0px;
   left: 0px;
-  background-image: url(../grid-template-init-project/assets/img/img-codding.png);
+  background-image: url(img/img-codding.png);
   background-position: center;
   background-size: cover;
 }
@@ -300,7 +300,7 @@ section {
   top: 0px;
   bottom: 0px;
   left: 0px;
-  background-image: url(../grid-template-init-project/assets/img/img-adaptability.png);
+  background-image: url(img/img-adaptability.png);
   background-position: center;
   background-size: cover;
 }
@@ -310,7 +310,7 @@ section {
   top: 0px;
   bottom: 0px;
   left: 0px;
-  background-image: url(../grid-template-init-project/assets/img/img-php.png);
+  background-image: url(img/img-php.png);
   background-position: center;
   background-size: cover;
 }
@@ -320,7 +320,7 @@ section {
   top: 0px;
   bottom: 0px;
   left: 0px;
-  background-image: url(../grid-template-init-project/assets/img/img-seo.png);
+  background-image: url(img/img-seo.png);
   background-position: center;
   background-size: cover;
 }
@@ -381,60 +381,4 @@ section {
   );
   color: #000000;
   transform: scale(1.05, 1.05);
-}
-
-@media (max-width: 1280px) {
-  html {
-    font-size: 16px;
-    color: #ffffffbe;
-  }
-}
-
-@media (max-width: 800px) {
-  html {
-    font-size: 9px;
-    color: #ffffffbe;
-  }
-  .btn {
-    gap: 30px;
-    width: 100px;
-    height: 20px;
-    font-size: 10px;
-    background-color: #ffffff12;
-    border: 1.5px solid rgba(255, 255, 255, 0.756);
-    text-align: center;
-    color: #ffffffa4;
-  }
-  .skills-title {
-    font-size: 15px;
-    position: absolute;
-    text-decoration: none;
-    color: #ffffff;
-    transition: color 0.5s;
-    padding: auto;
-  }
-}
-@media (max-width: 600px) {
-  .skills-title {
-    font-size: 12px;
-    position: absolute;
-    text-decoration: none;
-    color: #ffffff;
-    transition: color 0.5s;
-    padding: auto;
-  }
-  html {
-    font-size: 9px;
-    color: #ffffffbe;
-  }
-  .btn {
-    gap: 30px;
-    width: 100px;
-    height: 20px;
-    font-size: 10px;
-    background-color: #ffffff12;
-    border: 1.5px solid rgba(255, 255, 255, 0.756);
-    text-align: center;
-    color: #ffffffa4;
-  }
 }

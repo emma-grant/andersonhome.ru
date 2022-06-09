@@ -29,7 +29,7 @@ body {
   position: absolute;
   background-position: center;
   background-size: cover;
-  background-image: url(./img/img-header.png);
+  background-image: url('./img/img-header.png');
 }
 
 @keyframes backfon {

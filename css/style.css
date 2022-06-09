@@ -74,7 +74,7 @@ body {
 }
 
 .content-title_text {
-  letter-spacing: 3px;
+  letter-spacing: 1em;
   color: #ffffff;
   font-size: 2.5em;
   text-align: center;
@@ -86,7 +86,8 @@ body {
 .content-title_text:hover {
   color: #170e05;
   letter-spacing: 5px;
-  text-decoration: underline;
+   border-top: 1px solid black;
+  border-bottom: 1px solid black;
 }
 .header-navbar {
   margin-right: 25px;
@@ -464,7 +465,7 @@ section {
       "a5 a7"
       "a8 a9";
     /* высота столбцов */
-    grid-template-rows: 50vh 50vh 50vh 50vh 50vh 50vh;
+    grid-template-rows: 25vh 25vh 25vh 25vh 25vh 25vh;
     /* ширина столбцов */
     grid-template-columns: repeat(50vw);
     gap: 1px;

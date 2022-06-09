@@ -310,7 +310,7 @@ section {
   top: 0px;
   bottom: 0px;
   left: 0px;
-  background-image: url(img/img/img-php.png);
+  background-image: url('img/img/img-php.png');
   background-position: center;
   background-size: cover;
 }

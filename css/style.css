@@ -463,7 +463,7 @@ section {
     text-align: center;
     color: #ffffffa4;
   }
-}
+
 .skills {
     display: grid;
     grid-template-areas:
@@ -480,3 +480,4 @@ section {
     /* gap: 5px; */
     padding: 5px 5px 5px 5px;
   }
+}

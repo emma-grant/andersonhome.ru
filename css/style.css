@@ -464,3 +464,19 @@ section {
     color: #ffffffa4;
   }
 }
+.skills {
+    display: grid;
+    grid-template-areas:
+      "a1 a2"
+      "a3 a2"
+      "a4 a4"
+      "a5 a6"
+      "a5 a7"
+      "a8 a9";
+    /* высота столбцов */
+    grid-template-rows: 50vh 50vh 50vh 50vh 50vh 50vh;
+    /* ширина столбцов */
+    grid-template-columns: repeat(50vw);
+    /* gap: 5px; */
+    padding: 5px 5px 5px 5px;
+  }

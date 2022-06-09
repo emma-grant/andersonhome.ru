@@ -24,6 +24,7 @@ body {
   width: 100vw;
   height: 100vh;
   z-index: -3;
+  overflow: hidden;
 }
 .backfon {
   animation-name: backfon;
@@ -38,17 +39,19 @@ body {
   position: absolute;
   background-position: center;
   background-size: cover;
-  background-image: url('https://raw.githubusercontent.com/emma-grant/andersonhome.ru/master/img/eU_H4a2IKFM.jpg');
+  background-image: url(eU_H4a2IKFM.jpg);
 }
 
 @keyframes backfon {
   0% {
     transform: scale(1.5, 1.5);
     opacity: 0.9;
+    width: 100vw;
   }
   100% {
     transform: scale(1, 1);
     opacity: 1;
+    width: 100vw;
   }
 }
 .overlay {
@@ -68,7 +71,7 @@ body {
   justify-content: space-between;
   align-items: center;
   align-content: center;
-  z-index: 1;
+  z-index: 2;
   position: absolute;
   width: 100%;
 }
@@ -86,7 +89,7 @@ body {
 .content-title_text:hover {
   color: #170e05;
   letter-spacing: 5px;
-   border-top: 1px solid black;
+  border-top: 1px solid black;
   border-bottom: 1px solid black;
 }
 .header-navbar {
@@ -172,7 +175,7 @@ body {
   background-color: #f8b705da;
   color: #e0e0df;
   transform: scale(1.05, 1.05);
-  text-decoration: underline;
+  /* text-decoration: underline; */
 }
 .content-bar {
   display: flex;
@@ -194,7 +197,9 @@ section {
     "a1 a1 a2 a3"
     "a4 a5 a5 a6"
     "a7 a8 a9 a6";
-  grid-template-rows: 33.33vh 33.33vh 33.33vh;
+  /* высота столбцов */
+  grid-template-rows: 33.3vh 33.3vh 33.3vh;
+  /* ширина столбцов */
   grid-template-columns: repeat(25%);
   /* gap: 5px; */
   padding: 5px 5px 5px 5px;
@@ -250,7 +255,7 @@ section {
   top: 0px;
   bottom: 0px;
   left: 0px;
-  background-image: url(https://raw.githubusercontent.com/emma-grant/andersonhome.ru/master/img/img-html.png);
+  background-image: url(../grid-template-init-project/assets/img/img-html.png);
   background-position: center;
   background-size: cover;
 }
@@ -260,7 +265,7 @@ section {
   top: 0px;
   bottom: 0px;
   left: 0px;
-  background-image: url(https://raw.githubusercontent.com/emma-grant/andersonhome.ru/master/img/img-css.png);
+  background-image: url(../grid-template-init-project/assets/img/img-css.png);
   background-position: center;
   background-size: cover;
 }
@@ -270,7 +275,7 @@ section {
   top: 0px;
   bottom: 0px;
   left: 0px;
-  background-image: url(https://raw.githubusercontent.com/emma-grant/andersonhome.ru/master/img/img-markup.png);
+  background-image: url(../grid-template-init-project/assets/img/img-markup.png);
   background-position: center;
   background-size: cover;
 }
@@ -280,7 +285,7 @@ section {
   top: 0px;
   bottom: 0px;
   left: 0px;
-  background-image: url(https://raw.githubusercontent.com/emma-grant/andersonhome.ru/master/img/img-webdesign.png);
+  background-image: url(../grid-template-init-project/assets/img/img-webdesign.png);
   background-position: center;
   background-size: cover;
 }
@@ -290,7 +295,7 @@ section {
   top: 0px;
   bottom: 0px;
   left: 0px;
-  background-image: url(https://raw.githubusercontent.com/emma-grant/andersonhome.ru/master/img/img-qa.png);
+  background-image: url(../grid-template-init-project/assets/img/img-qa.png);
   background-position: center;
   background-size: cover;
 }
@@ -300,7 +305,7 @@ section {
   top: 0px;
   bottom: 0px;
   left: 0px;
-  background-image: url(https://raw.githubusercontent.com/emma-grant/andersonhome.ru/master/img/img-codding.png);
+  background-image: url(../grid-template-init-project/assets/img/img-codding.png);
   background-position: center;
   background-size: cover;
 }
@@ -310,7 +315,7 @@ section {
   top: 0px;
   bottom: 0px;
   left: 0px;
-  background-image: url(https://raw.githubusercontent.com/emma-grant/andersonhome.ru/master/img/img-adaptability.png);
+  background-image: url(../grid-template-init-project/assets/img/img-adaptability.png);
   background-position: center;
   background-size: cover;
 }
@@ -320,7 +325,7 @@ section {
   top: 0px;
   bottom: 0px;
   left: 0px;
-  background-image: url(https://raw.githubusercontent.com/emma-grant/andersonhome.ru/master/img/img-php.png);
+  background-image: url(../grid-template-init-project/assets/img/img-php.png);
   background-position: center;
   background-size: cover;
 }
@@ -330,7 +335,7 @@ section {
   top: 0px;
   bottom: 0px;
   left: 0px;
-  background-image: url(https://raw.githubusercontent.com/emma-grant/andersonhome.ru/master/img/img-seo.png);
+  background-image: url(../grid-template-init-project/assets/img/img-seo.png);
   background-position: center;
   background-size: cover;
 }
@@ -393,48 +398,16 @@ section {
   transform: scale(1.05, 1.05);
 }
 
-
-@media (max-width: 1280px) and (min-width: 601px) {
+/* @media (max-width: 1280px) {
   html {
-    font-size: 9px;
+    font-size: 16px;
     color: #ffffffbe;
   }
+} */
 
-  .skills {
-    display: grid;
-    grid-template-areas:
-      "a1 a1 a2 a3"
-      "a4 a5 a5 a6"
-      "a7 a8 a9 a6";
-    /* высота столбцов */
-    grid-template-rows: 33.3vh 33.3vh 33.3vh;
-    /* ширина столбцов */
-    grid-template-columns: repeat(25%);
-    /* gap: 5px; */
-    padding: 5px 5px 5px 5px;
-  }
-  .btn {
-    gap: 30px;
-    width: 100px;
-    height: 20px;
-    font-size: 10px;
-    background-color: #ffffff12;
-    border: 1.5px solid rgba(255, 255, 255, 0.756);
-    text-align: center;
-    color: #ffffffa4;
-  }
-  .skills-title {
-    font-size: 15px;
-    position: absolute;
-    text-decoration: none;
-    color: #ffffff;
-    transition: color 0.5s;
-    padding: auto;
-  }
-}
 @media (min-width: 600px) and (min-height: 900px) {
   .skills-title {
-    font-size: 12px;
+    font-size: 15px;
     position: absolute;
     text-decoration: none;
     color: #ffffff;

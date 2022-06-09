@@ -431,7 +431,7 @@ section {
     padding: auto;
   }
 }
-@media (max-width: 600px) and (min-width: 599px) {
+@media (min-width: 600px) and (min-height: 900px) {
   .skills-title {
     font-size: 12px;
     position: absolute;

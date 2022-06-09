@@ -11,21 +11,30 @@ html {
 header {
   height: 100vh;
   overflow-x: hidden;
+  /* position: relative; */
 }
 body {
   overflow-x: hidden;
+  position: relative;
   margin-top: 0px;
   margin-left: 0px;
+}
+.backfon1 {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  z-index: -3;
 }
 .backfon {
   animation-name: backfon;
   animation-duration: 11s;
   animation-direction: alternate;
   animation-iteration-count: infinite;
+
   z-index: -1;
   width: 100vw;
   height: 100vh;
-  overflow-x: hidden;
+  overflow-y: hidden;
   position: absolute;
   background-position: center;
   background-size: cover;
@@ -390,10 +399,27 @@ section {
   }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 830px) {
   html {
     font-size: 9px;
     color: #ffffffbe;
+  }
+
+  .skills {
+    display: grid;
+    grid-template-areas:
+      "a1 a2"
+      "a3 a2"
+      "a4 a4"
+      "a5 a6"
+      "a5 a7"
+      "a8 a9";
+    /* высота столбцов */
+    grid-template-rows: 50vh 50vh 50vh 50vh 50vh 50vh;
+    /* ширина столбцов */
+    grid-template-columns: repeat(50vw);
+    /* gap: 5px; */
+    padding: 5px 5px 5px 5px;
   }
   .btn {
     gap: 30px;

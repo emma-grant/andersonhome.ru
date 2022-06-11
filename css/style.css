@@ -445,4 +445,20 @@ section {
     gap: 1px;
     /* padding: 10px; */
   }
+   .content-title_text {
+    font-size: 4em;
+  }
+
+  .content-bar_button {
+    gap: 30px;
+    width: 20vw;
+    height: 3vh;
+  }
+  .header-logo {
+    font-size: 33px;
+  }
+  .header-navbar {
+    font-size: 28px;
+  }
 }
+

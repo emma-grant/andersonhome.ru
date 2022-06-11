@@ -3,6 +3,7 @@
 }
 Body{
 Margin-left: 0;
+Margin-right: 0;
 }
 
 .slide-fon {
@@ -16,7 +17,7 @@ Margin-left: 0;
 Margin-right: 0;
 Margin-left: 0;
 Left: 0;
-
+Right: 0;
 }
 
 .slide-blok {

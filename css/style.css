@@ -448,7 +448,9 @@ section {
    .content-title_text {
     font-size: 4em;
   }
-
+  .content-title_text:hover {
+    font-size: 4.5em;
+  }
   .content-bar_button {
     gap: 30px;
     width: 20vw;

@@ -18,7 +18,7 @@ Left: 0;
 
 .slide-blok {
   background-color: rgba(225, 27, 27, 0);
-  height: 350px;
+  height: 450px;
   position: absolute;
   left: 100px;
   right: 100px;
@@ -61,7 +61,7 @@ Left: 0;
 
 .blok-img-anime {
   animation-name: anime;
-  animation-duration: 20s;
+  animation-duration: 17s;
   animation-direction: alternate-reverse;
   animation-iteration-count: infinite;
   animation-timing-function: linear;

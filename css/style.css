@@ -452,8 +452,10 @@ section {
   .content-title_text {
     font-size: 8em;
   }
-  .content-title_text:hover {
+.content-title_text:hover {
     font-size: 9em;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
   }
  .content-bar_button {
     gap: 6px;

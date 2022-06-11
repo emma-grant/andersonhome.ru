@@ -61,9 +61,12 @@
   animation-iteration-count: infinite;
   animation-timing-function: linear;
   border-radius: 100px;
-  /* animation-delay: 2s; */
-  /* animation-fill-mode: both; */
+
 }
+.blok-img {
+  border-radius: 100px;
+} 
+
 @keyframes anime {
   0% {
     transform: translateX(1500px);
@@ -73,17 +76,4 @@
     transform: translateX(-1500px);
   }
 }
-.blok-img {
-  border-radius: 100px;
-}
-/* @media (max-widt: 500px) {
-  .slide-fon {
-    background-color: rgb(254, 249, 249);
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    position: relative;
-    align-items: flex-end;
-    overflow: hidden;
-  }
-} */
+

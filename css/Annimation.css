@@ -37,7 +37,7 @@ Left: 0;
   content: "";
   background-color: blue;
   position: absolute;
-  width: 250px;
+  width: 120px;
   height: 100%;
   right: 0px;
   transform: scale(-1, 1);
@@ -51,7 +51,7 @@ Left: 0;
 .slide-blok::before {
   content: "";
   position: absolute;
-  width: 250px;
+  width: 120px;
   height: 100%;
   left: 0px;
   background: linear-gradient(

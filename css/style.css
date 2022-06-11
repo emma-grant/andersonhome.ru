@@ -80,10 +80,13 @@ body {
 .content-title_text {
   letter-spacing: 1em;
   color: #ffffff;
-  font-size: 2.5em;
+  font-size: 4em;
   text-align: center;
   text-transform: uppercase;
   font-weight: 300;
+  letter-spacing: 5px;
+  border-top: 1.5px solid rgb(255, 251, 251);
+  border-bottom: 1.5px solid rgb(255, 255, 255);
   font-family: "roboto slab";
   transition: 1s;
 }
@@ -92,6 +95,7 @@ body {
   letter-spacing: 5px;
   border-top: 1px solid black;
   border-bottom: 1px solid black;
+  font-size: 4.5em;
 }
 .header-navbar {
   margin-right: 25px;
@@ -445,11 +449,11 @@ section {
     gap: 1px;
     /* padding: 10px; */
   }
-   .content-title_text {
-    font-size: 4em;
+  .content-title_text {
+    font-size: 8em;
   }
   .content-title_text:hover {
-    font-size: 4.5em;
+    font-size: 9em;
   }
   .content-bar_button {
     gap: 30px;

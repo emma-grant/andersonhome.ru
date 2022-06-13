@@ -75,6 +75,8 @@ body {
   z-index: 2;
   position: absolute;
   width: 100%;
+  background: #2d365175;
+  box-shadow: 0px 3px 3px #2d3651de;
 }
 
 .content-title_text {

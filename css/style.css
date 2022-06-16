@@ -127,9 +127,15 @@
     opacity: 0.9;
     width: 100vw;
   }
+  98% {
+    opacity: 1;
+  }
+  99% {
+    opacity: 0.1;
+  }
   100% {
-    -webkit-transform: scale(1, 1);
-            transform: scale(1, 1);
+    -webkit-transform: rotate(45deg) scale(2.3, 2.3);
+            transform: rotate(45deg) scale(2.3, 2.3);
     opacity: 1;
     width: 100vw;
   }
@@ -141,9 +147,15 @@
     opacity: 0.9;
     width: 100vw;
   }
+  98% {
+    opacity: 1;
+  }
+  99% {
+    opacity: 0.1;
+  }
   100% {
-    -webkit-transform: scale(1, 1);
-            transform: scale(1, 1);
+    -webkit-transform: rotate(45deg) scale(2.3, 2.3);
+            transform: rotate(45deg) scale(2.3, 2.3);
     opacity: 1;
     width: 100vw;
   }

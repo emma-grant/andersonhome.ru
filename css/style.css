@@ -334,7 +334,7 @@
   height: 35%;
   position: absolute;
   overflow: hidden;
-  top: 37.5%;
+  top: 32.5%;
 }
 
 .slide-blok {
@@ -428,6 +428,8 @@
   }
 }
 .blok-img {
+  max-height: 100%;
+  max-width: 100%;
   border-radius: 100px;
 }
 
@@ -818,6 +820,8 @@ body {
   }
   .blok-img {
     border-radius: 70px;
+    max-height: 100%;
+    max-width: 100%;
   }
   section .skills {
     display: grid;

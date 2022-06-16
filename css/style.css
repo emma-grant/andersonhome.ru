@@ -685,32 +685,8 @@ section .skills-button_action:hover {
 
 
 
-@media (min-width: 600px) and (min-height: 900px) {
-  .skills-title {
-    font-size: 15px;
-    position: absolute;
-    text-decoration: none;
-    color: #ffffff;
-    -webkit-transition: color 0.5s;
-    -o-transition: color 0.5s;
-    transition: color 0.5s;
-    padding: auto;
-  }
-  html {
-    font-size: 9px;
-    color: rgba(255, 255, 255, 0.7450980392);
-  }
-  .btn {
-    gap: 30px;
-    width: 100px;
-    height: 20px;
-    font-size: 10px;
-    background-color: rgba(255, 255, 255, 0.0705882353);
-    border: 1.5px solid rgba(255, 255, 255, 0.756);
-    text-align: center;
-    color: rgba(255, 255, 255, 0.6431372549);
-  }
-  .skills {
+@media (max-width: 575.8px) {
+  section .skills {
     display: grid;
     grid-template-areas: "a1 a2" "a3 a2" "a4 a4" "a5 a6" "a5 a7" "a8 a9";
     /* высота столбцов */
@@ -718,25 +694,6 @@ section .skills-button_action:hover {
     /* ширина столбцов */
     grid-template-columns: repeat(50vw);
     gap: 1px;
-  }
-  .content-title_text {
-    font-size: 8em;
-  }
-  .content-title_text:hover {
-    font-size: 9em;
-    border-top: 2px solid black;
-    border-bottom: 2px solid black;
-  }
-  .content-bar_button {
-    gap: 6px;
-    width: 20vw;
-    height: 4vh;
-    font-size: 3em;
-  }
-  .logo {
-    font-size: 33px;
-  }
-  .navbar {
-    font-size: 28px;
+    /* padding: 10px; */
   }
 }

@@ -325,11 +325,10 @@
   -o-object-fit: cover;
      object-fit: cover;
   height: inherit;
-  color: rgb(0, 0, 0);
   font-size: 3rem;
 }
 .img_overlay {
-  background-color: black;
+  background-color: rgb(0, 0, 0, 1);
   opacity: 0.3;
   width: inherit;
   height: inherit;
@@ -364,7 +363,7 @@
 
 .slide-blok::after {
   content: "";
-  background-color: blue;
+  background-color: rgb(0, 0, 255, 1);
   position: absolute;
   width: 10%;
   height: 100%;
@@ -474,11 +473,11 @@ section .skills-item {
       -ms-flex-align: center;
           align-items: center;
   position: relative;
-  background-color: rgb(0, 0, 0);
+  background-color: rgb(0, 0, 0, 1);
   margin: 3px;
   overflow: hidden;
-  -webkit-box-shadow: 2px 2px 2px rgb(10, 10, 10);
-          box-shadow: 2px 2px 2px rgb(10, 10, 10);
+  -webkit-box-shadow: 2px 2px 2px rgb(10, 10, 10, 1);
+          box-shadow: 2px 2px 2px rgb(10, 10, 10, 1);
   border-radius: 11px;
 }
 section .skills-item-backfon {
@@ -518,8 +517,8 @@ section .skills-button_action {
   width: 163px;
   height: 39px;
   color: rgba(255, 255, 255, 0.87);
-  background-color: rgba(45, 54, 81, 0.7960784314);
-  border: 1.5px solid rgba(30, 48, 101, 0.9882352941);
+  background-color: rgba(45, 54, 81, 0.796);
+  border: 1.5px solid rgba(30, 48, 101, 0.988);
   text-decoration: none;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -533,10 +532,10 @@ section .skills-button_action {
   border-radius: 5px;
 }
 section .skills-button_action:hover {
-  background: -webkit-gradient(linear, left bottom, left top, from(rgba(255, 255, 255, 0.655)), to(rgba(45, 54, 81, 0.6156862745)));
-  background: -o-linear-gradient(bottom, rgba(255, 255, 255, 0.655), rgba(45, 54, 81, 0.6156862745));
-  background: linear-gradient(to top, rgba(255, 255, 255, 0.655), rgba(45, 54, 81, 0.6156862745));
-  color: #000000;
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(255, 255, 255, 0.655)), to(rgba(45, 54, 81, 0.616)));
+  background: -o-linear-gradient(bottom, rgba(255, 255, 255, 0.655), rgba(45, 54, 81, 0.616));
+  background: linear-gradient(to top, rgba(255, 255, 255, 0.655), rgba(45, 54, 81, 0.616));
+  color: rgb(0, 0, 0);
   -webkit-transform: scale(1.05, 1.05);
       -ms-transform: scale(1.05, 1.05);
           transform: scale(1.05, 1.05);
@@ -546,7 +545,7 @@ section .skills-button_action:hover {
   font-size: 20px;
   position: absolute;
   text-decoration: none;
-  color: rgba(255, 255, 255, 0.8431372549);
+  color: rgba(255, 255, 255, 0.843);
   -webkit-transition: color 0.5s;
   -o-transition: color 0.5s;
   transition: color 0.5s;
@@ -554,7 +553,7 @@ section .skills-button_action:hover {
 }
 
 .backfon-overlay {
-  background-color: #2d3651;
+  background-color: rgb(45, 54, 81);
   position: absolute;
   right: 0px;
   top: 0px;

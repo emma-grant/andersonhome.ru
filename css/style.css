@@ -27,7 +27,7 @@
   z-index: 2;
   position: fixed;
   width: 100%;
-  background: rgba(45, 54, 81, 0.4588235294);
+  background: rgba(45, 54, 81, 0.6039215686);
   -webkit-box-shadow: 0px 3px 3px rgba(45, 54, 81, 0.8705882353);
           box-shadow: 0px 3px 3px rgba(45, 54, 81, 0.8705882353);
 }
@@ -101,14 +101,16 @@
           animation-direction: alternate;
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
   z-index: -1;
   width: 100vw;
   height: 100vh;
   overflow-y: hidden;
   position: absolute;
-  background-position: center;
+  background-position: 50% 50%;
   background-size: cover;
-  background-image: url(https://raw.githubusercontent.com/emma-grant/andersonhome.ru/master/img/7.jpg);
+  background-image: url(../../app/img/4.jpg);
 }
 .backfon-img_overlay {
   background-color: #2d3651;
@@ -122,42 +124,56 @@
 }
 @-webkit-keyframes backfon {
   0% {
-    -webkit-transform: scale(1.3, 1.3);
-            transform: scale(1.3, 1.3);
+    background-position: 0% 50%;
     opacity: 0.9;
-    width: 100vw;
+  }
+  33% {
+    -webkit-transform: scale(1.2, 1.2);
+            transform: scale(1.2, 1.2);
+  }
+  66% {
+    opacity: 0.9;
+    -webkit-transform: scale(1.2, 1.2);
+            transform: scale(1.2, 1.2);
   }
   98% {
     opacity: 1;
   }
   99% {
-    opacity: 0.1;
+    opacity: 0.3;
   }
   100% {
-    -webkit-transform: rotate(45deg) scale(2.3, 2.3);
-            transform: rotate(45deg) scale(2.3, 2.3);
+    background-position: 90% 50%;
     opacity: 1;
-    width: 100vw;
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
   }
 }
 @keyframes backfon {
   0% {
-    -webkit-transform: scale(1.3, 1.3);
-            transform: scale(1.3, 1.3);
+    background-position: 0% 50%;
     opacity: 0.9;
-    width: 100vw;
+  }
+  33% {
+    -webkit-transform: scale(1.2, 1.2);
+            transform: scale(1.2, 1.2);
+  }
+  66% {
+    opacity: 0.9;
+    -webkit-transform: scale(1.2, 1.2);
+            transform: scale(1.2, 1.2);
   }
   98% {
     opacity: 1;
   }
   99% {
-    opacity: 0.1;
+    opacity: 0.3;
   }
   100% {
-    -webkit-transform: rotate(45deg) scale(2.3, 2.3);
-            transform: rotate(45deg) scale(2.3, 2.3);
+    background-position: 90% 50%;
     opacity: 1;
-    width: 100vw;
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
   }
 }
 
@@ -215,7 +231,7 @@
   text-decoration: none;
   letter-spacing: 1em;
   color: #ffffff;
-  font-size: 4em;
+  font-size: 4.5em;
   text-align: center;
   text-transform: uppercase;
   font-weight: 300;
@@ -228,8 +244,8 @@
   transition: 1s;
   -webkit-animation: header-title;
           animation: header-title;
-  -webkit-animation-duration: 7s;
-          animation-duration: 7s;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
   -webkit-animation-direction: alternate;
           animation-direction: alternate;
   -webkit-animation-iteration-count: infinite;
@@ -246,11 +262,11 @@
 @-webkit-keyframes header-title {
   0% {
     opacity: 1;
-    color: rgb(255, 0, 0);
+    color: rgb(197, 0, 0);
   }
   97% {
     opacity: 1;
-    color: white;
+    color: rgb(255, 255, 255);
   }
   98% {
     opacity: 0.2;
@@ -262,17 +278,18 @@
   100% {
     opacity: 1;
     color: rgb(255, 255, 255);
+    font-weight: 400;
   }
 }
 
 @keyframes header-title {
   0% {
     opacity: 1;
-    color: rgb(255, 0, 0);
+    color: rgb(197, 0, 0);
   }
   97% {
     opacity: 1;
-    color: white;
+    color: rgb(255, 255, 255);
   }
   98% {
     opacity: 0.2;
@@ -284,6 +301,7 @@
   100% {
     opacity: 1;
     color: rgb(255, 255, 255);
+    font-weight: 400;
   }
 }
 .navbar-list_item--home {
@@ -424,7 +442,7 @@ section {
   position: absolute;
   right: 0px;
   left: 0px;
-  background-color: #ffffff;
+  background-color: rgba(0, 0, 0, 0.4823529412);
   overflow: hidden;
 }
 section .skills {
@@ -450,8 +468,8 @@ section .skills-item {
   background-color: rgb(0, 0, 0);
   margin: 3px;
   overflow: hidden;
-  -webkit-box-shadow: 2px 2px 2px black;
-          box-shadow: 2px 2px 2px black;
+  -webkit-box-shadow: 2px 2px 2px rgb(10, 10, 10);
+          box-shadow: 2px 2px 2px rgb(10, 10, 10);
   border-radius: 11px;
 }
 section .skills-item-backfon {
@@ -519,7 +537,7 @@ section .skills-button_action:hover {
   font-size: 20px;
   position: absolute;
   text-decoration: none;
-  color: #ffffff;
+  color: rgba(255, 255, 255, 0.8431372549);
   -webkit-transition: color 0.5s;
   -o-transition: color 0.5s;
   transition: color 0.5s;
@@ -577,10 +595,10 @@ section .skills-button_action:hover {
 
 .item-backfon_a1 {
   position: absolute;
-  right: 2px;
-  top: 2px;
-  bottom: 2px;
-  left: 2px;
+  right: 0px;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
   background-position: center;
   background-size: cover;
   -webkit-transition: 1s;
@@ -590,10 +608,10 @@ section .skills-button_action:hover {
 
 .item-backfon_a2 {
   position: absolute;
-  right: 2px;
-  top: 2px;
-  bottom: 2px;
-  left: 2px;
+  right: 0px;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
   background-position: center;
   background-size: cover;
   -webkit-transition: 1s;
@@ -603,10 +621,10 @@ section .skills-button_action:hover {
 
 .item-backfon_a3 {
   position: absolute;
-  right: 2px;
-  top: 2px;
-  bottom: 2px;
-  left: 2px;
+  right: 0px;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
   background-position: center;
   background-size: cover;
   -webkit-transition: 1s;
@@ -616,10 +634,10 @@ section .skills-button_action:hover {
 
 .item-backfon_a4 {
   position: absolute;
-  right: 2px;
-  top: 2px;
-  bottom: 2px;
-  left: 2px;
+  right: 0px;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
   background-position: center;
   background-size: cover;
   -webkit-transition: 1s;
@@ -629,10 +647,10 @@ section .skills-button_action:hover {
 
 .item-backfon_a5 {
   position: absolute;
-  right: 2px;
-  top: 2px;
-  bottom: 2px;
-  left: 2px;
+  right: 0px;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
   background-position: center;
   background-size: cover;
   -webkit-transition: 1s;
@@ -642,10 +660,10 @@ section .skills-button_action:hover {
 
 .item-backfon_a6 {
   position: absolute;
-  right: 2px;
-  top: 2px;
-  bottom: 2px;
-  left: 2px;
+  right: 0px;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
   background-position: center;
   background-size: cover;
   -webkit-transition: 1s;
@@ -655,10 +673,10 @@ section .skills-button_action:hover {
 
 .item-backfon_a7 {
   position: absolute;
-  right: 2px;
-  top: 2px;
-  bottom: 2px;
-  left: 2px;
+  right: 0px;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
   background-position: center;
   background-size: cover;
   -webkit-transition: 1s;
@@ -668,10 +686,10 @@ section .skills-button_action:hover {
 
 .item-backfon_a8 {
   position: absolute;
-  right: 2px;
-  top: 2px;
-  bottom: 2px;
-  left: 2px;
+  right: 0px;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
   background-position: center;
   background-size: cover;
   -webkit-transition: 1s;
@@ -681,10 +699,10 @@ section .skills-button_action:hover {
 
 .item-backfon_a9 {
   position: absolute;
-  right: 2px;
-  top: 2px;
-  bottom: 2px;
-  left: 2px;
+  right: 0px;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
   background-position: center;
   background-size: cover;
   -webkit-transition: 1s;
@@ -757,6 +775,7 @@ body {
   margin-top: 0;
   margin-left: 0;
   margin-right: 0;
+  background-color: rgb(0, 1, 1);
 }
 
 @media (max-width: 575.8px) {
@@ -773,6 +792,7 @@ body {
     font-family: Georgia, "Times New Roman", Times, serif;
   }
   .content .content-title_text {
+    font-weight: 400;
     font-size: 2em;
   }
   .content .content-title_text:hover {
@@ -781,6 +801,7 @@ body {
   }
   .footer-backfon {
     height: 70vh;
+    margin: 5px 5px 0px 5px;
   }
   .slide-fon {
     height: 35%;

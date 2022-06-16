@@ -4,6 +4,23 @@
           box-sizing: border-box;
 }
 
+html {
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.7450980392);
+}
+
+header {
+  height: 100vh;
+  overflow-x: hidden;
+}
+
+body {
+  overflow-x: hidden;
+  margin-top: 0;
+  margin-left: 0;
+  margin-right: 0;
+}
+
 .header {
   min-height: 70px;
   display: -webkit-box;
@@ -666,22 +683,7 @@ section .skills-button_action:hover {
   opacity: 0.85;
 }
 
-html {
-  font-size: 16px;
-  color: rgba(255, 255, 255, 0.7450980392);
-}
 
-header {
-  height: 100vh;
-  overflow-x: hidden;
-}
-
-body {
-  overflow-x: hidden;
-  margin-top: 0;
-  margin-left: 0;
-  margin-right: 0;
-}
 
 @media (min-width: 600px) and (min-height: 900px) {
   .skills-title {

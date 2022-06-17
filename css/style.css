@@ -326,13 +326,9 @@
 .img {
   background-image: url(https://raw.githubusercontent.com/emma-grant/andersonhome.ru/master/img/skull777.jpg);
   background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-size: cover;
   background-position: center;
   max-width: 100%;
   max-height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
   height: inherit;
   font-size: 3rem;
   z-index: -1;

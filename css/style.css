@@ -11,8 +11,13 @@
 /* sm */
 /* xs */
 /* xx */
-.header {
-  min-height: 70px;
+.headers_fixed {
+  position: fixed;
+  top: 0;
+}
+
+.headers {
+  height: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -25,19 +30,17 @@
   -ms-flex-line-pack: center;
       align-content: center;
   z-index: 2;
-  position: fixed;
   width: 100%;
-  background: rgba(45, 54, 81, 0.6039215686);
-  -webkit-box-shadow: 0px 3px 3px rgba(45, 54, 81, 0.8705882353);
-          box-shadow: 0px 3px 3px rgba(45, 54, 81, 0.8705882353);
+  -webkit-box-shadow: 0px 1px 7px 2px rgba(0, 0, 0, 0.8705882353);
+          box-shadow: 0px 1px 7px 2px rgba(0, 0, 0, 0.8705882353);
 }
-.header .logo {
+.headers .logo {
   letter-spacing: 2px;
   font-family: "roboto slab";
   font-size: 1rem;
   text-transform: uppercase;
 }
-.header .logo_accent {
+.headers .logo_accent {
   -webkit-box-shadow: inset 0px 0px 5px 2px rgb(159, 10, 5);
           box-shadow: inset 0px 0px 5px 2px rgb(159, 10, 5);
   display: inline-block;
@@ -52,23 +55,23 @@
   -o-transition: 0.5s;
   transition: 0.5s;
 }
-.header .logo_accent:hover {
+.headers .logo_accent:hover {
   -webkit-transform: scale(1.05, 1.051);
       -ms-transform: scale(1.05, 1.051);
           transform: scale(1.05, 1.051);
   color: #ffc401;
 }
-.header .navbar {
+.headers .navbar {
   margin-right: 25px;
 }
-.header .navbar-list {
+.headers .navbar-list {
   list-style: none;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   gap: 15px;
 }
-.header .navbar-list_item {
+.headers .navbar-list_item {
   font-family: Georgia, "Times New Roman", Times, serif;
   font-size: 1em;
   color: rgba(255, 255, 255, 0.6745098039);
@@ -77,10 +80,10 @@
   -o-transition: 0.5s;
   transition: 0.5s;
 }
-.header .navbar-list_item:focus {
+.headers .navbar-list_item:focus {
   color: rgba(219, 0, 44, 0.858);
 }
-.header .navbar-list_item:hover {
+.headers .navbar-list_item:hover {
   -webkit-transform: scale(1.1, 1.1);
       -ms-transform: scale(1.1, 1.1);
           transform: scale(1.1, 1.1);
@@ -97,8 +100,8 @@
           box-shadow: inset 0px 0px 200px 200px rgb(0, 0, 0);
 }
 .backfon-img {
-  -webkit-animation-name: backfon;
-          animation-name: backfon;
+  -webkit-animation-name: backfon1;
+          animation-name: backfon1;
   -webkit-animation-duration: 11s;
           animation-duration: 11s;
   -webkit-animation-direction: alternate;
@@ -112,9 +115,8 @@
   height: 100vh;
   overflow-y: hidden;
   position: absolute;
-  background-position: 50% 50%;
-  background-size: cover;
-  background-image: url(https://raw.githubusercontent.com/emma-grant/andersonhome.ru/master/img/4.jpg);
+  background-position: 10% 50%;
+  background-image: url(https://raw.githubusercontent.com/emma-grant/andersonhome.ru/master/img/scary.jpg);
 }
 .backfon-img_overlay {
   background-color: #2d3651;
@@ -128,12 +130,16 @@
 }
 @-webkit-keyframes backfon {
   0% {
-    background-position: 0% 50%;
-    opacity: 0.9;
+    background-position: 15% 50%;
+    opacity: 0.3;
+  }
+  20% {
+    opacity: 0.5;
   }
   33% {
-    -webkit-transform: scale(1.2, 1.2);
-            transform: scale(1.2, 1.2);
+    opacity: 0.8;
+    -webkit-transform: scale(1.1, 1.1);
+            transform: scale(1.1, 1.1);
   }
   66% {
     opacity: 0.9;
@@ -155,12 +161,16 @@
 }
 @keyframes backfon {
   0% {
-    background-position: 0% 50%;
-    opacity: 0.9;
+    background-position: 15% 50%;
+    opacity: 0.3;
+  }
+  20% {
+    opacity: 0.5;
   }
   33% {
-    -webkit-transform: scale(1.2, 1.2);
-            transform: scale(1.2, 1.2);
+    opacity: 0.8;
+    -webkit-transform: scale(1.1, 1.1);
+            transform: scale(1.1, 1.1);
   }
   66% {
     opacity: 0.9;
@@ -181,6 +191,69 @@
   }
 }
 
+@-webkit-keyframes backfon1 {
+  0% {
+    background-position: 0% 50%;
+    opacity: 0.3;
+  }
+  20% {
+    opacity: 0.5;
+  }
+  33% {
+    opacity: 0.8;
+    -webkit-transform: scale(1.1, 1.1);
+            transform: scale(1.1, 1.1);
+  }
+  66% {
+    opacity: 0.9;
+    -webkit-transform: scale(1.2, 1.2);
+            transform: scale(1.2, 1.2);
+  }
+  98% {
+    opacity: 1;
+  }
+  99% {
+    opacity: 0.3;
+  }
+  100% {
+    background-position: 100% 50%;
+    opacity: 1;
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+  }
+}
+
+@keyframes backfon1 {
+  0% {
+    background-position: 0% 50%;
+    opacity: 0.3;
+  }
+  20% {
+    opacity: 0.5;
+  }
+  33% {
+    opacity: 0.8;
+    -webkit-transform: scale(1.1, 1.1);
+            transform: scale(1.1, 1.1);
+  }
+  66% {
+    opacity: 0.9;
+    -webkit-transform: scale(1.2, 1.2);
+            transform: scale(1.2, 1.2);
+  }
+  98% {
+    opacity: 1;
+  }
+  99% {
+    opacity: 0.3;
+  }
+  100% {
+    background-position: 100% 50%;
+    opacity: 1;
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+  }
+}
 .content {
   position: absolute;
   top: 0px;
@@ -216,9 +289,9 @@
           box-shadow: inset 0px 4px 5px 0px rgb(177, 177, 177);
   width: 163px;
   height: 39px;
-  background: -webkit-gradient(linear, left bottom, left top, from(rgba(255, 255, 255, 0.655)), to(rgba(45, 54, 81, 0.6156862745)));
-  background: -o-linear-gradient(bottom, rgba(255, 255, 255, 0.655), rgba(45, 54, 81, 0.6156862745));
-  background: linear-gradient(to top, rgba(255, 255, 255, 0.655), rgba(45, 54, 81, 0.6156862745));
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(51, 50, 50, 0.655)), to(rgba(45, 54, 81, 0.6156862745)));
+  background: -o-linear-gradient(bottom, rgba(51, 50, 50, 0.655), rgba(45, 54, 81, 0.6156862745));
+  background: linear-gradient(to top, rgba(51, 50, 50, 0.655), rgba(45, 54, 81, 0.6156862745));
   border: 1.5px solid rgba(45, 54, 81, 0.6156862745);
   text-align: center;
   color: #dfdfdf;
@@ -235,6 +308,7 @@
           transform: scale(1.05, 1.05);
 }
 .content .content-title_text {
+  display: inline-block;
   text-shadow: 3px 3px 5px rgb(0, 0, 0);
   text-decoration: none;
   letter-spacing: 1em;
@@ -247,30 +321,144 @@
   border-top: 1.5px solid rgb(255, 251, 251);
   border-bottom: 1.5px solid rgb(255, 255, 255);
   font-family: "roboto slab";
-  -webkit-transition: 1s;
-  -o-transition: 1s;
-  transition: 1s;
   -webkit-animation: header-title;
           animation: header-title;
-  -webkit-animation-duration: 5s;
-          animation-duration: 5s;
+  -webkit-animation-duration: 8s;
+          animation-duration: 8s;
   -webkit-animation-direction: alternate;
           animation-direction: alternate;
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
 }
-.content .content-title_text:hover {
-  color: #170e05;
-  letter-spacing: 6px;
-  border-top: 2px solid black;
-  border-bottom: 2px solid black;
-  font-size: 4.5em;
+.content .content-title_text--accent {
+  -webkit-animation: header-title-accent;
+          animation: header-title-accent;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  display: inline-block;
+}
+.content .content-title_text--accent_2 {
+  -webkit-animation: header-title-accent_2;
+          animation: header-title-accent_2;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  display: inline-block;
 }
 
+@-webkit-keyframes header-title-accent {
+  0% {
+    opacity: 1;
+  }
+  95% {
+    opacity: 1;
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+  }
+  96% {
+    opacity: 0.1;
+  }
+  97% {
+    opacity: 1;
+    -webkit-transform: scale(-1, 1);
+            transform: scale(-1, 1);
+  }
+  98% {
+    opacity: 0.1;
+  }
+  99% {
+    opacity: 1;
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes header-title-accent {
+  0% {
+    opacity: 1;
+  }
+  95% {
+    opacity: 1;
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+  }
+  96% {
+    opacity: 0.1;
+  }
+  97% {
+    opacity: 1;
+    -webkit-transform: scale(-1, 1);
+            transform: scale(-1, 1);
+  }
+  98% {
+    opacity: 0.1;
+  }
+  99% {
+    opacity: 1;
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes header-title-accent_2 {
+  0% {
+    opacity: 1;
+  }
+  1% {
+    opacity: 0;
+  }
+  2% {
+    opacity: 1;
+  }
+  3% {
+    opacity: 0.1;
+  }
+  4% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes header-title-accent_2 {
+  0% {
+    opacity: 1;
+  }
+  1% {
+    opacity: 0;
+  }
+  2% {
+    opacity: 1;
+  }
+  3% {
+    opacity: 0.1;
+  }
+  4% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 @-webkit-keyframes header-title {
   0% {
     opacity: 1;
-    color: rgb(197, 0, 0);
+    color: rgb(177, 0, 0);
+  }
+  50% {
+    color: rgb(214, 34, 34);
   }
   97% {
     opacity: 1;
@@ -289,11 +477,13 @@
     font-weight: 400;
   }
 }
-
 @keyframes header-title {
   0% {
     opacity: 1;
-    color: rgb(197, 0, 0);
+    color: rgb(177, 0, 0);
+  }
+  50% {
+    color: rgb(214, 34, 34);
   }
   97% {
     opacity: 1;
@@ -326,9 +516,13 @@
 .img {
   background-image: url(https://raw.githubusercontent.com/emma-grant/andersonhome.ru/master/img/skull777.jpg);
   background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
   background-position: center;
   max-width: 100%;
   max-height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
   height: inherit;
   font-size: 3rem;
   z-index: -1;
@@ -514,7 +708,9 @@ section .skills-button_action {
   width: 163px;
   height: 39px;
   color: rgba(255, 255, 255, 0.87);
-  background-color: rgba(45, 54, 81, 0.796);
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(255, 255, 255, 0.655)), to(rgba(45, 54, 81, 0.616)));
+  background: -o-linear-gradient(bottom, rgba(255, 255, 255, 0.655), rgba(45, 54, 81, 0.616));
+  background: linear-gradient(to top, rgba(255, 255, 255, 0.655), rgba(45, 54, 81, 0.616));
   border: 1.5px solid rgba(30, 48, 101, 0.988);
   text-decoration: none;
   -webkit-box-align: center;
@@ -777,7 +973,7 @@ section .skills-button_action:hover {
   height: 100vh;
   background-color: rgb(255, 149, 0);
   background-image: url(https://raw.githubusercontent.com/emma-grant/andersonhome.ru/master/img/skull777.jpg);
-  background-position: center;
+  background-position: 50% 20%;
   background-size: cover;
   bottom: 0px;
   margin-bottom: 0px;
@@ -793,6 +989,7 @@ html {
 header {
   height: 100vh;
   overflow-x: hidden;
+  overflow-y: hidden;
 }
 
 body {
@@ -801,32 +998,38 @@ body {
   margin-left: 0;
   margin-right: 0;
   background-color: rgb(0, 1, 1);
+  padding-top: 0px;
 }
 
 @media (max-width: 575.8px) {
-  .header {
-    min-height: 5vh;
+  .headers {
+    min-height: 4.5vh;
+    background: rgba(13, 16, 27, 0.6039215686);
   }
-  .header .navbar-list {
+  .headers .navbar-list_item {
     display: none;
   }
-  .header .navbar-list--toogle {
-    display: block !important;
-    background-color: red;
+  .backfon-img {
+    background-position: 50% 50%;
+    -webkit-animation-name: backfon;
+            animation-name: backfon;
+    -webkit-animation-duration: 12s;
+            animation-duration: 12s;
+    -webkit-animation-direction: alternate;
+            animation-direction: alternate;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+    background-image: url(https://raw.githubusercontent.com/emma-grant/andersonhome.ru/master/img/scary.jpg);
   }
   .content .content-bar_button {
-    width: 25vw;
-    height: 3.5vh;
+    width: 29vw;
+    height: 4vh;
     font-size: 0.9em;
     font-family: Georgia, "Times New Roman", Times, serif;
   }
   .content .content-title_text {
     font-weight: 400;
     font-size: 2em;
-  }
-  .content .content-title_text:hover {
-    font-size: 2.5em;
-    color: #170e05;
   }
   .footer-backfon {
     height: 70vh;

@@ -512,11 +512,8 @@
 .img {
   background-image: url(https://raw.githubusercontent.com/emma-grant/andersonhome.ru/master/img/scary4.jpg);
   background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-size: cover;
   background-position: 25% 10%;
   height: inherit;
-  font-size: 3rem;
   z-index: -1;
 }
 .img_overlay {

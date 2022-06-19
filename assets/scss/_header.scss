@@ -59,6 +59,7 @@
      color: #ffffffac;
      text-decoration: none;
      transition: 0.5s;
+     display: inline-block;
      @include sm{
       display: none;
      }
@@ -66,13 +67,15 @@
       color: rgba(219, 0, 44, 0.858);
      }
      &:hover {
-      transform: scale(1.1, 1.1);
+      transform: translate(0px -10px);
       color: $yellow;
      }
     }
    }
  }
 }
+
+
 
 .backfon {
   position: relative;
@@ -348,7 +351,7 @@ opacity: 1;
 }
 
 .navbar-list_item--home {
- color: #ffffff;
+ color: #ef1616;
 }
 
 

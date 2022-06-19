@@ -11,11 +11,6 @@
 /* sm */
 /* xs */
 /* xx */
-.headers_fixed {
-  position: fixed;
-  top: 0;
-}
-
 .headers {
   height: 50px;
   display: -webkit-box;
@@ -30,7 +25,9 @@
   -ms-flex-line-pack: center;
       align-content: center;
   z-index: 2;
+  position: fixed;
   width: 100%;
+  background-color: rgba(0, 0, 0, 0.2745098039);
   -webkit-box-shadow: 0px 1px 7px 2px rgba(0, 0, 0, 0.8705882353);
           box-shadow: 0px 1px 7px 2px rgba(0, 0, 0, 0.8705882353);
 }
@@ -301,7 +298,7 @@
   border-radius: 5px;
 }
 .content .content-bar_button:hover {
-  background-color: rgba(248, 183, 5, 0.8470588235);
+  background-color: rgba(248, 183, 5, 0.7921568627);
   color: #ffffff;
   -webkit-transform: scale(1.05, 1.05);
       -ms-transform: scale(1.05, 1.05);
@@ -510,15 +507,14 @@
   height: 70vh;
   margin: 10px 10px 0px 10px;
   position: relative;
-  float: none;
 }
 
 .img {
-  background-image: url(https://raw.githubusercontent.com/emma-grant/andersonhome.ru/master/img/skull777.jpg);
+  background-image: url(../../app/img/scary4.jpg);
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
+  background-position: 25% 10%;
   max-width: 100%;
   max-height: 100%;
   -o-object-fit: cover;
@@ -539,17 +535,17 @@
 .slide-fon {
   background-color: rgba(255, 255, 255, 0);
   width: 100%;
-  height: 35%;
+  height: 55%;
   position: absolute;
   z-index: 1;
-  top: 32.5%;
+  top: 22.5%;
 }
 
 .slide-blok {
   height: 100%;
   position: absolute;
-  left: 100px;
-  right: 100px;
+  left: 50%;
+  right: 5%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -560,42 +556,42 @@
       -ms-flex-pack: center;
           justify-content: center;
   overflow: hidden;
-  border-radius: 90px;
+  border-radius: 50px;
   background-color: rgba(240, 248, 255, 0);
 }
 
 .slide-blok::after {
   content: "";
   position: absolute;
-  width: 10%;
+  width: 30%;
   height: 100%;
   right: 0px;
   -webkit-transform: scale(-1, 1);
       -ms-transform: scale(-1, 1);
           transform: scale(-1, 1);
-  background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0)), to(rgba(255, 255, 255, 0)));
-  background: -o-linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(255, 255, 255, 0) 100%);
-  background: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(255, 255, 255, 0) 100%);
+  background: -webkit-gradient(linear, left top, right top, from(rgb(0, 0, 0)), to(rgba(0, 0, 0, 0)));
+  background: -o-linear-gradient(left, rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0) 100%);
+  background: linear-gradient(to right, rgb(0, 0, 0) 0%, rgba(0, 0, 0, 0) 100%);
   z-index: 1;
 }
 
 .slide-blok::before {
   content: "";
   position: absolute;
-  width: 10%;
+  width: 30%;
   height: 100%;
   left: 0px;
-  background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0)), to(rgba(255, 255, 255, 0)));
-  background: -o-linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(255, 255, 255, 0) 100%);
-  background: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(255, 255, 255, 0) 100%);
+  background: -webkit-gradient(linear, left top, right top, from(rgb(0, 0, 0)), to(rgba(255, 255, 255, 0)));
+  background: -o-linear-gradient(left, rgb(0, 0, 0) 0%, rgba(255, 255, 255, 0) 100%);
+  background: linear-gradient(to right, rgb(0, 0, 0) 0%, rgba(255, 255, 255, 0) 100%);
   z-index: 1;
 }
 
 .blok-img-anime {
   -webkit-animation-name: anime;
           animation-name: anime;
-  -webkit-animation-duration: 25s;
-          animation-duration: 25s;
+  -webkit-animation-duration: 50s;
+          animation-duration: 50s;
   animation-direction: alternate-reverse;
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
@@ -690,6 +686,7 @@ section .skills-item-backfon {
 }
 section .skills-button {
   width: 100%;
+  margin-top: 5px;
   margin-bottom: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -708,10 +705,10 @@ section .skills-button_action {
   width: 163px;
   height: 39px;
   color: rgba(255, 255, 255, 0.87);
-  background: -webkit-gradient(linear, left bottom, left top, from(rgba(255, 255, 255, 0.655)), to(rgba(45, 54, 81, 0.616)));
-  background: -o-linear-gradient(bottom, rgba(255, 255, 255, 0.655), rgba(45, 54, 81, 0.616));
-  background: linear-gradient(to top, rgba(255, 255, 255, 0.655), rgba(45, 54, 81, 0.616));
-  border: 1.5px solid rgba(30, 48, 101, 0.988);
+  background: rgba(31, 47, 93, 0.662745098);
+  border: 1px solid #1e3065;
+  -webkit-box-shadow: inset 0px 0px 1px 2px black;
+          box-shadow: inset 0px 0px 1px 2px black;
   text-decoration: none;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -759,7 +756,7 @@ section .skills-button_action:hover {
   top: 0px;
   bottom: 0px;
   left: 0px;
-  opacity: 0.4;
+  opacity: 0.3;
   -webkit-transition: opacity 1s;
   -o-transition: opacity 1s;
   transition: opacity 1s;
@@ -807,7 +804,6 @@ section .skills-button_action:hover {
   top: 0px;
   bottom: 0px;
   left: 0px;
-  background-position: center;
   background-size: cover;
   -webkit-transition: 1s;
   -o-transition: 1s;
@@ -820,7 +816,6 @@ section .skills-button_action:hover {
   top: 0px;
   bottom: 0px;
   left: 0px;
-  background-position: center;
   background-size: cover;
   -webkit-transition: 1s;
   -o-transition: 1s;
@@ -833,7 +828,6 @@ section .skills-button_action:hover {
   top: 0px;
   bottom: 0px;
   left: 0px;
-  background-position: center;
   background-size: cover;
   -webkit-transition: 1s;
   -o-transition: 1s;
@@ -846,7 +840,6 @@ section .skills-button_action:hover {
   top: 0px;
   bottom: 0px;
   left: 0px;
-  background-position: center;
   background-size: cover;
   -webkit-transition: 1s;
   -o-transition: 1s;
@@ -859,7 +852,6 @@ section .skills-button_action:hover {
   top: 0px;
   bottom: 0px;
   left: 0px;
-  background-position: center;
   background-size: cover;
   -webkit-transition: 1s;
   -o-transition: 1s;
@@ -872,7 +864,6 @@ section .skills-button_action:hover {
   top: 0px;
   bottom: 0px;
   left: 0px;
-  background-position: center;
   background-size: cover;
   -webkit-transition: 1s;
   -o-transition: 1s;
@@ -885,7 +876,6 @@ section .skills-button_action:hover {
   top: 0px;
   bottom: 0px;
   left: 0px;
-  background-position: center;
   background-size: cover;
   -webkit-transition: 1s;
   -o-transition: 1s;
@@ -898,7 +888,6 @@ section .skills-button_action:hover {
   top: 0px;
   bottom: 0px;
   left: 0px;
-  background-position: center;
   background-size: cover;
   -webkit-transition: 1s;
   -o-transition: 1s;
@@ -911,7 +900,6 @@ section .skills-button_action:hover {
   top: 0px;
   bottom: 0px;
   left: 0px;
-  background-position: center;
   background-size: cover;
   -webkit-transition: 1s;
   -o-transition: 1s;
@@ -919,39 +907,47 @@ section .skills-button_action:hover {
 }
 
 .item-backfon_a1 {
-  background-image: url(https://raw.githubusercontent.com/emma-grant/andersonhome.ru/master/img/img-html.png);
+  background-image: url(https://raw.githubusercontent.com/emma-grant/andersonhome.ru/master/img/1231231223.jpeg);
+  background-position: 50% 50%;
 }
 
 .item-backfon_a2 {
-  background-image: url(https://raw.githubusercontent.com/emma-grant/andersonhome.ru/master/img/img-css.png);
+  background-image: url(https://raw.githubusercontent.com/emma-grant/andersonhome.ru/master/img/skull777.jpg);
 }
 
 .item-backfon_a3 {
-  background-image: url(https://raw.githubusercontent.com/emma-grant/andersonhome.ru/master/img/img-markup.png);
+  background-image: url(https://raw.githubusercontent.com/emma-grant/andersonhome.ru/master/img/IMG_7205.jpg);
+  background-size: cover;
+  background-position: 50% 80%;
 }
 
 .item-backfon_a4 {
-  background-image: url(https://raw.githubusercontent.com/emma-grant/andersonhome.ru/master/img/img-webdesign.png);
+  background-image: url(https://raw.githubusercontent.com/emma-grant/andersonhome.ru/master/img/IMG_1575.jpg);
+  background-size: cover;
+  background-position: 50% 30%;
 }
 
 .item-backfon_a5 {
-  background-image: url(https://raw.githubusercontent.com/emma-grant/andersonhome.ru/master/img/img-qa.png);
+  background-image: url(https://raw.githubusercontent.com/emma-grant/andersonhome.ru/master/img/skull.jpg);
+  background-position: 50% 50%;
 }
 
 .item-backfon_a6 {
-  background-image: url(https://raw.githubusercontent.com/emma-grant/andersonhome.ru/master/img/img-codding.png);
+  background-image: url(https://raw.githubusercontent.com/emma-grant/andersonhome.ru/master/img/IMG_0905.jpg);
+  background-position: 47% 50%;
 }
 
 .item-backfon_a7 {
-  background-image: url(https://raw.githubusercontent.com/emma-grant/andersonhome.ru/master/img/img-adaptability.png);
+  background-image: url(https://raw.githubusercontent.com/emma-grant/andersonhome.ru/master/img/scary3.jpg);
 }
 
 .item-backfon_a8 {
-  background-image: url(https://raw.githubusercontent.com/emma-grant/andersonhome.ru/master/img/img-php.png);
+  background-image: url(https://raw.githubusercontent.com/emma-grant/andersonhome.ru/master/img/IMG_7238.jpg);
+  background-position: 50% 60%;
 }
 
 .item-backfon_a9 {
-  background-image: url(https://raw.githubusercontent.com/emma-grant/andersonhome.ru/master/img/img-seo.png);
+  background-image: url(https://raw.githubusercontent.com/emma-grant/andersonhome.ru/master/img/scary5.jpg);
 }
 
 .skills-item:hover .skills-title {
@@ -965,22 +961,82 @@ section .skills-button_action:hover {
 }
 
 .skills-item:hover .backfon-overlay {
-  opacity: 0.85;
+  opacity: 0.75;
 }
 
 .three {
   width: 100%;
-  height: 100vh;
+  height: 50vh;
   background-color: rgb(255, 149, 0);
-  background-image: url(https://raw.githubusercontent.com/emma-grant/andersonhome.ru/master/img/skull777.jpg);
-  background-position: 50% 20%;
+  background-image: url(https://raw.githubusercontent.com/emma-grant/andersonhome.ru/master/img/wallpapersden.com_it-chapter-two-movie-2019-art_2560x1700.jpg);
+  background-position: 50% 25%;
   background-size: cover;
   bottom: 0px;
   margin-bottom: 0px;
   position: relative;
-  background-attachment: fixed;
+  -webkit-animation-name: scarymoment;
+          animation-name: scarymoment;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
 }
 
+@-webkit-keyframes scarymoment {
+  0% {
+    opacity: 0;
+  }
+  94% {
+    opacity: 0;
+  }
+  95% {
+    opacity: 1;
+  }
+  96% {
+    opacity: 0;
+  }
+  97% {
+    opacity: 1;
+  }
+  98% {
+    opacity: 0;
+  }
+  99% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes scarymoment {
+  0% {
+    opacity: 0;
+  }
+  94% {
+    opacity: 0;
+  }
+  95% {
+    opacity: 1;
+  }
+  96% {
+    opacity: 0;
+  }
+  97% {
+    opacity: 1;
+  }
+  98% {
+    opacity: 0;
+  }
+  99% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
 html {
   font-size: 16px;
   color: rgba(255, 255, 255, 0.7450980392);
@@ -997,8 +1053,9 @@ body {
   margin-top: 0;
   margin-left: 0;
   margin-right: 0;
-  background-color: rgb(0, 1, 1);
+  background-color: rgb(0, 0, 1);
   padding-top: 0px;
+  margin-top: 0px;
 }
 
 @media (max-width: 575.8px) {
@@ -1047,9 +1104,19 @@ body {
     right: 15px;
     border-radius: 70px;
   }
+  .slide-blok::after {
+    background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0)));
+    background: -o-linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 100%);
+    background: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 100%);
+  }
+  .slide-blok::before {
+    background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0)));
+    background: -o-linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 100%);
+    background: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 100%);
+  }
   .blok-img-anime {
-    -webkit-animation-duration: 40s;
-            animation-duration: 40s;
+    -webkit-animation-duration: 50s;
+            animation-duration: 50s;
   }
   .blok-img {
     border-radius: 70px;
@@ -1066,7 +1133,23 @@ body {
     gap: 1px;
     /* padding: 10px; */
   }
+  .item-backfon_a1 {
+    background-position: 50% 30%;
+  }
+  .item-backfon_a5 {
+    background-position: 40% 50%;
+  }
+  .item-backfon_a6 {
+    background-image: url(https://raw.githubusercontent.com/emma-grant/andersonhome.ru/master/img/scary3.jpg);
+  }
+  .item-backfon_a7 {
+    background-position: 50% 50%;
+    background-image: url(https://raw.githubusercontent.com/emma-grant/andersonhome.ru/master/img/IMG_0905.jpg);
+  }
+  .item-backfon_a9 {
+    background-position: 50% 50%;
+  }
   .three {
-    background-position: 22% 70%;
+    background-position: 50% 70%;
   }
 }

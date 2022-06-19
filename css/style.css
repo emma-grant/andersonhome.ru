@@ -11,7 +11,7 @@
 /* sm */
 /* xs */
 /* xx */
-.headers {
+.header {
   height: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -31,13 +31,13 @@
   -webkit-box-shadow: 0px 1px 7px 2px rgba(0, 0, 0, 0.8705882353);
           box-shadow: 0px 1px 7px 2px rgba(0, 0, 0, 0.8705882353);
 }
-.headers .logo {
+.header .logo {
   letter-spacing: 2px;
   font-family: "roboto slab";
   font-size: 1rem;
   text-transform: uppercase;
 }
-.headers .logo_accent {
+.header .logo_accent {
   -webkit-box-shadow: inset 0px 0px 5px 2px rgb(159, 10, 5);
           box-shadow: inset 0px 0px 5px 2px rgb(159, 10, 5);
   display: inline-block;
@@ -52,23 +52,23 @@
   -o-transition: 0.5s;
   transition: 0.5s;
 }
-.headers .logo_accent:hover {
+.header .logo_accent:hover {
   -webkit-transform: scale(1.05, 1.051);
       -ms-transform: scale(1.05, 1.051);
           transform: scale(1.05, 1.051);
   color: #ffc401;
 }
-.headers .navbar {
+.header .navbar {
   margin-right: 25px;
 }
-.headers .navbar-list {
+.header .navbar-list {
   list-style: none;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   gap: 15px;
 }
-.headers .navbar-list_item {
+.header .navbar-list_item {
   font-family: Georgia, "Times New Roman", Times, serif;
   font-size: 1em;
   color: rgba(255, 255, 255, 0.6745098039);
@@ -77,10 +77,10 @@
   -o-transition: 0.5s;
   transition: 0.5s;
 }
-.headers .navbar-list_item:focus {
+.header .navbar-list_item:focus {
   color: rgba(219, 0, 44, 0.858);
 }
-.headers .navbar-list_item:hover {
+.header .navbar-list_item:hover {
   -webkit-transform: scale(1.1, 1.1);
       -ms-transform: scale(1.1, 1.1);
           transform: scale(1.1, 1.1);
@@ -95,6 +95,9 @@
   overflow: hidden;
   -webkit-box-shadow: inset 0px 0px 200px 200px rgb(0, 0, 0);
           box-shadow: inset 0px 0px 200px 200px rgb(0, 0, 0);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 .backfon-img {
   -webkit-animation-name: backfon1;
@@ -112,7 +115,6 @@
   height: 100vh;
   overflow-y: hidden;
   position: absolute;
-  background-position: 10% 50%;
   background-image: url(https://raw.githubusercontent.com/emma-grant/andersonhome.ru/master/img/scary.jpg);
 }
 .backfon-img_overlay {
@@ -514,6 +516,7 @@
   background-attachment: fixed;
   background-position: 25% 10%;
   height: inherit;
+  font-size: 3rem;
   z-index: -1;
 }
 .img_overlay {
@@ -591,6 +594,9 @@
   -webkit-animation-timing-function: linear;
           animation-timing-function: linear;
   border-radius: 100px;
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
 }
 
 @-webkit-keyframes anime {
@@ -957,7 +963,7 @@ section .skills-button_action:hover {
   opacity: 0.75;
 }
 
-.three {
+.bottom-blok-backfon {
   width: 100%;
   height: 50vh;
   background-color: rgb(255, 149, 0);
@@ -969,16 +975,78 @@ section .skills-button_action:hover {
   position: relative;
   -webkit-animation-name: scarymoment;
           animation-name: scarymoment;
-  -webkit-animation-duration: 3s;
-          animation-duration: 3s;
-  -webkit-animation-direction: alternate;
-          animation-direction: alternate;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
+  -webkit-animation-direction: normal;
+          animation-direction: normal;
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
 }
 
+.bottom-navbar {
+  width: 100%;
+  min-height: 10vh;
+  background-color: rgba(222, 184, 135, 0);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 30px;
+}
+.bottom-navbar .icon-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-decoration: none;
+  list-style: none;
+  padding: 0px;
+  gap: 30px;
+}
+.bottom-navbar .icon-list .list-item {
+  font-size: 40px;
+}
+.bottom-navbar .icon-list .list-item .item_link {
+  color: red;
+}
+.bottom-navbar .icon-list .list-item .item_link:hover {
+  -webkit-transition: 0.7s;
+  -o-transition: 0.7s;
+  transition: 0.7s;
+  -webkit-transform: rotate(1turn) scale(1.2);
+      -ms-transform: rotate(1turn) scale(1.2);
+          transform: rotate(1turn) scale(1.2);
+  color: rgb(255, 238, 0);
+  display: inline-block;
+}
+
 @-webkit-keyframes scarymoment {
   0% {
+    opacity: 0;
+  }
+  44% {
+    opacity: 0;
+  }
+  45% {
+    opacity: 1;
+  }
+  46% {
+    opacity: 0;
+  }
+  47% {
+    opacity: 1;
+  }
+  48% {
+    opacity: 0;
+  }
+  49% {
+    opacity: 1;
+  }
+  60% {
     opacity: 0;
   }
   94% {
@@ -1005,51 +1073,52 @@ section .skills-button_action:hover {
 }
 
 @keyframes scarymoment {
-  0%{
-opacity: 0;
-  }
-  44%{
+  0% {
     opacity: 0;
   }
-  45%{
-    opacity: 1;
-  }
-  46%{
+  44% {
     opacity: 0;
   }
-  47%{
+  45% {
     opacity: 1;
   }
-   48%{
-opacity: 0;
-  }
-   49%{
-opacity: 1;
-  }
-   50%{
-opacity: 0;
-  }
-
-  95%{
-    opacity: 1;
-  }
-  96%{
+  46% {
     opacity: 0;
   }
-  97%{
+  47% {
     opacity: 1;
   }
-   98%{
-opacity: 0;
+  48% {
+    opacity: 0;
   }
-   99%{
-opacity: 1;
+  49% {
+    opacity: 1;
   }
-   100%{
-opacity: 0;
+  60% {
+    opacity: 0;
+  }
+  94% {
+    opacity: 0;
+  }
+  95% {
+    opacity: 1;
+  }
+  96% {
+    opacity: 0;
+  }
+  97% {
+    opacity: 1;
+  }
+  98% {
+    opacity: 0;
+  }
+  99% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
   }
 }
-
 html {
   font-size: 16px;
   color: rgba(255, 255, 255, 0.7450980392);
@@ -1057,6 +1126,7 @@ html {
 
 header {
   height: 100vh;
+  width: 100%;
   overflow-x: hidden;
   overflow-y: hidden;
 }
@@ -1066,17 +1136,17 @@ body {
   margin-top: 0;
   margin-left: 0;
   margin-right: 0;
+  margin-bottom: 0;
   background-color: rgb(0, 0, 1);
   padding-top: 0px;
-  margin-top: 0px;
 }
 
 @media (max-width: 575.8px) {
-  .headers {
+  .header {
     min-height: 4.5vh;
     background: rgba(13, 16, 27, 0.6039215686);
   }
-  .headers .navbar-list_item {
+  .header .navbar-list_item {
     display: none;
   }
   .backfon-img {
@@ -1162,7 +1232,10 @@ body {
   .item-backfon_a9 {
     background-position: 50% 50%;
   }
-  .three {
+  .bottom-blok-backfon {
     background-position: 50% 70%;
+  }
+  .bottom-navbar .icon-list .list-item {
+    font-size: 30px;
   }
 }

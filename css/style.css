@@ -517,8 +517,6 @@
   background-position: 25% 10%;
   max-width: 100%;
   max-height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
   height: inherit;
   font-size: 3rem;
   z-index: -1;

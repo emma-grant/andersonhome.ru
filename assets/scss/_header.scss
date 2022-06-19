@@ -1,0 +1,364 @@
+@import"pressets/skins";
+@import"mixins/mixins";
+
+// .headers_fixed{
+//   position: fixed;
+//   top: 0;
+//   background: #0244ed9c; 
+// }
+.header {
+ height: 50px;
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ align-content: center;
+ z-index: 2;
+ position: fixed;
+ width: 100%;
+ background-color: #00000046;
+ box-shadow:  0px 1px 7px 2px #000000de;
+@include sm{
+  min-height: 4.5vh;
+  background: #0d101b9a;
+}
+ .logo {
+  letter-spacing: 2px;
+  font-family: "roboto slab";
+  font-size: 1rem;
+  text-transform: uppercase;
+  @include sm{
+    
+  }
+  &_accent {
+    box-shadow: inset 0px 0px 5px 2px rgb(159, 10, 5);
+   display: inline-block;
+   letter-spacing: 2px;
+   border: 2px solid red;
+   margin-right: 2px;
+   margin-left: 17px;
+   padding: 3px 3px 3px 4px;
+   text-decoration: none;
+   color: #ffffffcb;
+   transition: 0.5s;
+  &:hover {
+    transform: scale(1.05, 1.051);
+  color: $yellow;
+   }
+  }
+ }
+ .navbar {
+  margin-right: 25px;
+
+  &-list {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    &_item {
+     font-family: Georgia, 'Times New Roman', Times, serif;
+     font-size: 1em;
+     color: #ffffffac;
+     text-decoration: none;
+     transition: 0.5s;
+     @include sm{
+      display: none;
+     }
+     &:focus {
+      color: rgba(219, 0, 44, 0.858);
+     }
+     &:hover {
+      transform: scale(1.1, 1.1);
+      color: $yellow;
+     }
+    }
+   }
+ }
+}
+
+.backfon {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  z-index: -3;
+  overflow: hidden;
+  box-shadow: inset 0px 0px 200px 200px rgb(0, 0, 0);
+ display: flex;
+  &-img {
+   animation-name: backfon1;
+   animation-duration: 11s;
+   animation-direction: alternate;
+   animation-iteration-count: infinite;
+   animation-timing-function: ease-in-out;
+   z-index: -1;
+   width: 100vw;
+   height: 100vh;
+   overflow-y: hidden;
+   position: absolute;
+  
+  //  background-position: 10% 50%;
+   background-image: url(https://raw.githubusercontent.com/emma-grant/andersonhome.ru/master/img/scary.jpg);
+    @include sm{
+      background-position: 50% 50%;
+      animation-name: backfon;
+      animation-duration: 12s;
+      animation-direction: alternate;
+      animation-iteration-count: infinite;
+      // animation-timing-function: ease-in-out;
+      background-image: url(https://raw.githubusercontent.com/emma-grant/andersonhome.ru/master/img/scary.jpg);
+    }
+   &_overlay {
+     background-color: #2d3651;
+     width: 100%;
+     height: 100vh;
+     z-index: -1;
+     background-position: center;
+     background-size: cover;
+     position: absolute;
+     opacity: 0.4;
+    }
+  }
+  @keyframes backfon {
+    0% {
+      background-position: 15% 50%;
+      opacity: 0.3;
+    }
+    20%{
+      opacity: 0.5;
+    }
+    33%{
+      opacity: 0.8;
+      transform: scale(1.1, 1.1);
+    }
+    66%{
+      opacity: 0.9;
+      transform: scale(1.2, 1.2);
+    }
+    
+    98%{
+      opacity: 1;
+    }
+    99%{
+      opacity: 0.3;
+    }
+    100% {
+      background-position: 90% 50%;
+      opacity: 1;
+      transform: scale(1, 1);
+    }
+   }
+ }
+ @keyframes backfon1 {
+  0% {
+    background-position: 0% 50%;
+    opacity: 0.3;
+  }
+  20%{
+    opacity: 0.5;
+  }
+  33%{
+    opacity: 0.8;
+    transform: scale(1.1, 1.1);
+  }
+  66%{
+    // background-position: 50% 50%;
+    opacity: 0.9;
+    transform: scale(1.2, 1.2);
+    
+  }
+  98%{
+    opacity: 1;
+  }
+  99%{
+    opacity: 0.3;
+  }
+  100% {
+    background-position: 100% 50%;
+    opacity: 1;
+    transform: scale(1, 1);
+  }
+ }
+
+ 
+
+.content {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  z-index: 0;
+  .content-bar {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+
+    &_button {
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      box-shadow: inset 0px 4px 5px 0px rgb(177, 177, 177);
+      width: 163px;
+      height: 39px;
+      background: linear-gradient(
+                      to top,
+                      rgba(51, 50, 50, 0.655), $blue );
+      border: 1.5px solid $blue;
+      text-align: center;
+      color: #dfdfdf;
+      transition: 1s;
+      border-radius: 5px;
+      @include sm{
+        width: 29vw;
+        height: 4vh;
+        font-size: 0.9em;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+      }
+         &:hover {
+         background-color:  #f8b705ca;
+         color: #ffffff;
+         transform: scale(1.05, 1.05);
+      }
+     }
+   }
+
+   .content-title{
+
+    &_text{  
+    display: inline-block;
+    text-shadow:  3px 3px 5px rgb(0, 0, 0);
+    text-decoration: none;
+    letter-spacing: 1em;
+    color: #ffffff;
+    font-size: 4.5em;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 300;
+    letter-spacing: 5px;
+    border-top: 1.5px solid rgb(255, 251, 251);
+    border-bottom: 1.5px solid rgb(255, 255, 255);
+    font-family: "roboto slab";
+     
+     animation: header-title;
+     animation-duration: 8s;
+     animation-direction: alternate;
+     animation-iteration-count: infinite;
+
+     &--accent{
+      animation: header-title-accent;
+     animation-duration: 4s;
+     animation-direction: alternate;
+     animation-iteration-count: infinite;
+     display: inline-block;
+     }
+     &--accent_2{
+      animation: header-title-accent_2;
+     animation-duration: 4s;
+     animation-direction: alternate;
+     animation-iteration-count: infinite;
+     display: inline-block;
+    
+     }
+    
+     @include sm{
+      font-weight: 400;
+      font-size: 2em;
+     }
+    }
+   }
+  }
+   
+ @keyframes  header-title-accent {
+  0%{
+opacity: 1;
+
+  }
+  95%{
+    opacity: 1;
+    transform:scale(1,1);
+  }
+  96%{
+    opacity: 0.1;
+  }
+  97%{
+    opacity: 1;
+    transform:scale(-1,1);
+  }
+  98%{
+    opacity: 0.1;
+  }
+  99%{
+    opacity: 1;
+    transform:scale(1,1);
+  }
+  100%{
+    opacity: 1;
+    
+  }
+ }
+ @keyframes  header-title-accent_2 {
+  0%{
+    opacity: 1;
+  }
+  1%{
+    opacity: 0;
+  }
+  2%{
+    opacity: 1;
+  }
+  3%{
+    opacity: 0.1;
+  }
+  4%{
+    opacity: 1;
+  }
+ 
+  100%{
+    opacity: 1;
+  }
+ }
+@keyframes header-title {
+  0%{
+    opacity: 1;
+    color: rgb(177, 0, 0);
+    
+  }
+  50%{
+    color: rgb(214, 34, 34)
+  }
+  97%{
+    opacity: 1;
+    color: rgb(255, 255, 255);
+  }
+  98%{
+    opacity: 0.2;
+  }
+  99%{
+    opacity: 1;
+    color: rgb(255, 255, 255);
+  }
+  100%{
+    
+    opacity: 1;
+    color: rgb(255, 255, 255);
+    font-weight: 400;
+
+  }
+}
+
+.navbar-list_item--home {
+ color: #ffffff;
+}
+
+
+
+
+
+
+
+
+ 
+
+
+

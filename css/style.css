@@ -736,7 +736,7 @@ section .skills-button_action {
  display: -ms-flexbox;
  display: flex;
  width: 163px;
- height: 39px;
+ height: 40px;
  color: rgba(255, 255, 255, 0.87);
  background: rgba(31, 47, 93, 0.662745098);
  border: 1px solid #1e3065;

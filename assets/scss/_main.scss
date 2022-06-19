@@ -1,0 +1,189 @@
+@import"mixins/mixins";
+
+
+section {
+//  position: absolute;
+ right: 0px;
+ left: 0px;
+ background-color: #0000007b;
+ overflow: hidden;
+
+
+ .skills {
+  display: grid;
+  grid-template-areas:
+    "a1 a1 a2 a3"
+    "a4 a5 a5 a6"
+    "a7 a8 a9 a6";
+  /* высота столбцов */
+  grid-template-rows: 33.3vh 33.3vh 33.3vh;
+  /* ширина столбцов */
+  grid-template-columns: repeat(25%);
+  padding: 5px 5px 5px 5px;
+  @include sm{
+    display: grid;
+    grid-template-areas:
+      "a1 a2"
+      "a3 a2"
+      "a4 a4"
+      "a5 a6"
+      "a5 a7"
+      "a8 a9";
+    /* высота столбцов */
+    grid-template-rows: 25vh 25vh 25vh 25vh 25vh 25vh;
+    /* ширина столбцов */
+    grid-template-columns: repeat(50vw);
+    gap: 1px;
+    /* padding: 10px; */
+  }
+
+ &-item {
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ position: relative;
+ background-color: rgb(0, 0, 0,1);
+ margin: 3px;
+ overflow: hidden;
+ box-shadow: 2px 2px 2px rgb(10, 10, 10,1);
+ border-radius: 11px;
+
+ &-backfon {
+  font-size: 2em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 1s;
+  }
+}
+ }
+ 
+ .skills-button {
+  width: 100%;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+    &_action {
+   display: flex;
+   width: 163px;
+   height: 39px;
+   color: rgba(255, 255, 255, 0.87);
+   background:#1f2f5da9;
+   border: 1px solid #1e3065;
+   box-shadow: inset 0px 0px 1px 2px black;
+   text-decoration: none;
+   align-items: center;
+   justify-content: center;
+   transition: 1s;
+   border-radius: 5px;
+    &:hover {
+    background: linear-gradient(to top,
+    rgba(255, 255, 255, 0.655),
+    rgba(45, 54, 81, 0.616));          
+    color: rgb(0, 0, 0,1);
+    transform: scale(1.05, 1.05);
+   }
+  }
+  }
+}
+
+.skills-title {
+  font-size: 20px;
+  position: absolute;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.843);
+  transition: color 0.5s;
+  transition: transform 1s;
+  padding: auto;
+ }
+ 
+.backfon-overlay {
+  box-shadow: inset 0px 0px 20px 15px rgb(0, 0, 0);
+  background-color: rgb(45, 54, 81);
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 0.3;
+  transition: opacity 1s;
+ }
+
+
+@for $i from 1 through 9{
+ .skills-item_a#{$i} {
+  grid-area: a#{$i}
+ }
+}
+
+@for $i from 1 through 9 {
+ .item-backfon_a#{$i} {
+  @include parametrs-item-backfon;
+ }
+}
+
+.item-backfon_a1 {
+ background-image: url(https://raw.githubusercontent.com/emma-grant/andersonhome.ru/master/img/1231231223.jpeg);
+ background-position: 50% 50%;
+ @include sm{
+  background-position: 50% 30%;
+ }
+}
+.item-backfon_a2 {
+ background-image: url(https://raw.githubusercontent.com/emma-grant/andersonhome.ru/master/img/skull777.jpg);
+}
+.item-backfon_a3 {
+ background-image: url(https://raw.githubusercontent.com/emma-grant/andersonhome.ru/master/img/IMG_7205.jpg);
+ background-size: cover;
+ background-position: 50% 80%;
+}
+.item-backfon_a4 {
+ background-image: url(https://raw.githubusercontent.com/emma-grant/andersonhome.ru/master/img/IMG_1575.jpg);
+ background-size: cover;
+background-position: 50% 30%;
+}
+.item-backfon_a5 {
+ background-image: url(https://raw.githubusercontent.com/emma-grant/andersonhome.ru/master/img/skull.jpg);
+ background-position: 50% 50%;
+ @include sm{
+  background-position: 40% 50%;
+ }
+}
+.item-backfon_a6 {
+ background-image: url(https://raw.githubusercontent.com/emma-grant/andersonhome.ru/master/img/IMG_0905.jpg);
+ background-position: 47% 50%;
+ @include sm{
+ background-image: url(https://raw.githubusercontent.com/emma-grant/andersonhome.ru/master/img/scary3.jpg);
+ }
+}
+.item-backfon_a7 {
+ background-image: url(https://raw.githubusercontent.com/emma-grant/andersonhome.ru/master/img/scary3.jpg);
+ @include sm{
+  background-position: 50% 50%;
+  background-image: url(https://raw.githubusercontent.com/emma-grant/andersonhome.ru/master/img/IMG_0905.jpg);
+ }
+}
+.item-backfon_a8 {
+ background-image: url(https://raw.githubusercontent.com/emma-grant/andersonhome.ru/master/img/IMG_7238.jpg);
+ background-position: 50% 60%;
+}
+.item-backfon_a9 {
+ background-image: url(https://raw.githubusercontent.com/emma-grant/andersonhome.ru/master/img/scary5.jpg);
+ @include sm{
+  background-position: 50% 50%;
+ }
+
+}
+
+.skills-item:hover .skills-title {
+ color: #ffc401;
+}
+.skills-item:hover .skills-backfon {
+ transform: scale(1.1, 1.1);
+}
+.skills-item:hover .backfon-overlay {
+ opacity: 0.75;
+ 
+}

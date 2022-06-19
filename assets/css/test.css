@@ -1,0 +1,31 @@
+.container {
+  background: rgb(172, 27, 27);
+}
+.container-logo {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  position: absolute;
+  letter-spacing: 2px;
+  font-family: "roboto slab";
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+.container-logo_accent {
+  display: inline-block;
+  letter-spacing: 2px;
+  border: 2px solid red;
+  margin-right: 2px;
+  margin-left: 17px;
+  padding: 3px 3px 3px 4px;
+  text-decoration: none;
+  color: #fe0101;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+.container-logo_accent:hover {
+  -webkit-transform: scale(1.05, 1.051);
+      -ms-transform: scale(1.05, 1.051);
+          transform: scale(1.05, 1.051);
+  color: #fe0101;
+}

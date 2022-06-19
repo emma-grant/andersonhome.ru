@@ -1,0 +1,38 @@
+$white: #fe0101;
+
+@mixin margin ($margin: 0px) {
+ margin-top: $margin;
+ margin-bottom: $margin;
+ position: absolute;
+}
+
+.container{
+ background: rgb(172, 27, 27);
+
+ &-logo{
+  @include margin;
+  letter-spacing: 2px;
+  font-family: "roboto slab";
+  font-size: 1rem;
+  text-transform: uppercase;
+
+  &_accent{
+  display: inline-block;
+  letter-spacing: 2px;
+  border: 2px solid red;
+  margin-right: 2px;
+  margin-left: 17px;
+  padding: 3px 3px 3px 4px;
+  text-decoration: none;
+  color: $white;
+  transition: 0.5s;
+  &:hover{
+   transform: scale(1.05, 1.051);
+   color: $white;
+   
+  }
+  }
+ }
+}
+
+

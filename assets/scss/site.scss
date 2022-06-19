@@ -1,0 +1,94 @@
+* {
+  box-sizing: border-box;
+}
+
+@import"header";
+@import"footer";
+@import"main";
+@import"bottom-blok";
+
+html {
+  font-size: 16px;
+  color: #ffffffbe;
+}
+
+header {
+  height: 100vh;
+  width: 100%;
+  overflow-x: hidden;
+  overflow-y: hidden;
+
+}
+
+body {
+  overflow-x: hidden;
+  margin-top: 0;
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: 0;
+  background-color: rgb(0, 0, 1);
+  padding-top: 0px;
+}
+
+
+// @media (min-width: 600px) and ( min-height: 900px) {
+//   .skills-title {
+//     font-size: 15px;
+//     position: absolute;
+//     text-decoration: none;
+//     color: #ffffff;
+//     transition: color 0.5s;
+//     padding: auto;
+//   }
+//   html {
+//     font-size: 9px;
+//     color: #ffffffbe;
+//   }
+//   .btn {
+//     gap: 30px;
+//     width: 100px;
+//     height: 20px;
+//     font-size: 10px;
+//     background-color: #ffffff12;
+//     border: 1.5px solid rgba(255, 255, 255, 0.756);
+//     text-align: center;
+//     color: #ffffffa4;
+//   }
+//   .skills {
+//     display: grid;
+//     grid-template-areas:
+//       "a1 a2"
+//       "a3 a2"
+//       "a4 a4"
+//       "a5 a6"
+//       "a5 a7"
+//       "a8 a9";
+    
+//     grid-template-rows: 25vh 25vh 25vh 25vh 25vh 25vh;
+    
+//     grid-template-columns: repeat(50vw);
+//     gap: 1px;
+//   }
+//   .content-title_text {
+//     font-size: 8em;
+    
+//   }
+//   .content-title_text:hover {
+//     font-size: 9em;
+//     border-top: 2px solid black;
+//     border-bottom: 2px solid black;
+//   }
+  
+//   .content-bar_button {
+//     gap: 6px;
+//     width: 20vw;
+//     height: 4vh;
+//     font-size: 3em;
+//   }
+//   .logo {
+//     font-size: 33px;
+//   }
+//   .navbar {
+//     font-size: 28px;
+//   }
+// }

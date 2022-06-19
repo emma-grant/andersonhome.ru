@@ -510,7 +510,7 @@
 }
 
 .img {
-  background-image: url(../../app/img/scary4.jpg);
+  background-image: url(https://raw.githubusercontent.com/emma-grant/andersonhome.ru/master/img/scary4.jpg);
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1098,6 +1098,9 @@ body {
   .slide-fon {
     height: 35%;
     top: 32.5%;
+    -webkit-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+            transform: rotate(90deg);
   }
   .slide-blok {
     left: 15px;
@@ -1122,6 +1125,9 @@ body {
     border-radius: 70px;
     max-height: 100%;
     max-width: 100%;
+    -webkit-transform: scale(-1, 1);
+        -ms-transform: scale(-1, 1);
+            transform: scale(-1, 1);
   }
   section .skills {
     display: grid;

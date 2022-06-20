@@ -13,10 +13,44 @@
   animation-duration: 4s;
   animation-direction: normal;
   animation-iteration-count: infinite;
+  overflow: hidden;
+  display: inline-block;
   @include sm{
    background-position: 50% 70%;
  }
  }
+ .bottom-blok-backfon::before{
+  animation-name: bottomfonoverlay;
+  animation-duration: 5s;
+  animation-direction: normal;
+  animation-iteration-count: infinite;
+  content: "";
+  display: inline-block;
+  width: 200%;
+  height: 300%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  background-color:$blue;
+  // background: linear-gradient(to left, transparent 0%, rgb(202, 200, 200) 40%, rgb(170, 170, 170) 60%, transparent 100%);
+  transform: translate( 0%,0%);
+  opacity: 0.4;
+ }
+
+// @keyframes bottomfonoverlay {
+//   0%{ 
+   
+//   }
+//   80%{ 
+//     filter: blur(5px);
+//     transform: translate( -100%, 0%);
+//   }
+//   100%{
+//     filter: blur(5px);
+//    transform: translate( 100%, 0%);
+   
+//   }
+// }
 
  .bottom-navbar{
   width: 100%;

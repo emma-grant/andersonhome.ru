@@ -284,14 +284,25 @@
   margin-top: 10px;
 }
 .content .content-bar_button {
-  font-family: Georgia, "Times New Roman", Times, serif;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+  font-family: Georgia, "Times New Roman", Times, "Times New Roman", Times, serif;
   -webkit-box-shadow: inset 0px 4px 5px 0px rgb(177, 177, 177);
           box-shadow: inset 0px 4px 5px 0px rgb(177, 177, 177);
   width: 163px;
   height: 39px;
-  background: -webkit-gradient(linear, left bottom, left top, from(rgba(51, 50, 50, 0.655)), to(rgba(45, 54, 81, 0.6156862745)));
-  background: -o-linear-gradient(bottom, rgba(51, 50, 50, 0.655), rgba(45, 54, 81, 0.6156862745));
-  background: linear-gradient(to top, rgba(51, 50, 50, 0.655), rgba(45, 54, 81, 0.6156862745));
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(168, 168, 168, 0.655)), to(rgba(45, 54, 81, 0.6156862745)));
+  background: -o-linear-gradient(bottom, rgba(168, 168, 168, 0.655), rgba(45, 54, 81, 0.6156862745));
+  background: linear-gradient(to top, rgba(168, 168, 168, 0.655), rgba(45, 54, 81, 0.6156862745));
   border: 1.5px solid rgba(45, 54, 81, 0.6156862745);
   text-align: center;
   color: #dfdfdf;
@@ -301,11 +312,70 @@
   border-radius: 5px;
 }
 .content .content-bar_button:hover {
-  background-color: rgba(248, 183, 5, 0.7921568627);
+  background-color: rgba(255, 189, 22, 0.8235294118);
   color: #ffffff;
   -webkit-transform: scale(1.05, 1.05);
       -ms-transform: scale(1.05, 1.05);
           transform: scale(1.05, 1.05);
+}
+.content .content-bar_button--action {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.7960784314);
+}
+.content .content-bar_button:before {
+  -webkit-animation-name: bottomfonoverlay2;
+          animation-name: bottomfonoverlay2;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-direction: normal;
+          animation-direction: normal;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  content: "";
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  background: -webkit-gradient(linear, right top, left top, from(transparent), color-stop(40%, rgb(202, 200, 200)), color-stop(60%, rgb(170, 170, 170)), to(transparent));
+  background: -o-linear-gradient(right, transparent 0%, rgb(202, 200, 200) 40%, rgb(170, 170, 170) 60%, transparent 100%);
+  background: linear-gradient(to left, transparent 0%, rgb(202, 200, 200) 40%, rgb(170, 170, 170) 60%, transparent 100%);
+  -webkit-transform: translate(-110%, 0%);
+      -ms-transform: translate(-110%, 0%);
+          transform: translate(-110%, 0%);
+}
+@-webkit-keyframes bottomfonoverlay2 {
+  0% {
+    -webkit-transform: translate(-110%, 0%);
+            transform: translate(-110%, 0%);
+  }
+  85% {
+    -webkit-transform: translate(-110%, 0%);
+            transform: translate(-110%, 0%);
+  }
+  100% {
+    -webkit-filter: blur(5px);
+            filter: blur(5px);
+    -webkit-transform: translate(100%, 0%);
+            transform: translate(100%, 0%);
+  }
+}
+@keyframes bottomfonoverlay2 {
+  0% {
+    -webkit-transform: translate(-110%, 0%);
+            transform: translate(-110%, 0%);
+  }
+  85% {
+    -webkit-transform: translate(-110%, 0%);
+            transform: translate(-110%, 0%);
+  }
+  100% {
+    -webkit-filter: blur(5px);
+            filter: blur(5px);
+    -webkit-transform: translate(100%, 0%);
+            transform: translate(100%, 0%);
+  }
 }
 .content .content-title_text {
   display: inline-block;
@@ -699,14 +769,18 @@ section .skills-button {
           justify-content: center;
 }
 section .skills-button_action {
+  position: relative;
+  display: inline-block;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   width: 163px;
   height: 39px;
   color: rgba(255, 255, 255, 0.87);
-  background: rgba(31, 47, 93, 0.662745098);
-  border: 1px solid #1e3065;
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(41, 39, 65, 0.781)), to(rgba(255, 255, 255, 0.616)));
+  background: -o-linear-gradient(bottom, rgba(41, 39, 65, 0.781), rgba(255, 255, 255, 0.616));
+  background: linear-gradient(to top, rgba(41, 39, 65, 0.781), rgba(255, 255, 255, 0.616));
+  border: 1px solid #000000;
   -webkit-box-shadow: inset 0px 0px 1px 2px black;
           box-shadow: inset 0px 0px 1px 2px black;
   text-decoration: none;
@@ -720,17 +794,78 @@ section .skills-button_action {
   -o-transition: 1s;
   transition: 1s;
   border-radius: 5px;
+  text-decoration: none;
+  overflow: hidden;
 }
 section .skills-button_action:hover {
-  background: -webkit-gradient(linear, left bottom, left top, from(rgba(255, 255, 255, 0.655)), to(rgba(45, 54, 81, 0.616)));
-  background: -o-linear-gradient(bottom, rgba(255, 255, 255, 0.655), rgba(45, 54, 81, 0.616));
-  background: linear-gradient(to top, rgba(255, 255, 255, 0.655), rgba(45, 54, 81, 0.616));
-  color: rgb(0, 0, 0);
+  background: rgba(44, 63, 96, 0.863);
   -webkit-transform: scale(1.05, 1.05);
       -ms-transform: scale(1.05, 1.05);
           transform: scale(1.05, 1.05);
 }
 
+.skills-button_action:before {
+  -webkit-animation-name: bottomfonoverlay1;
+          animation-name: bottomfonoverlay1;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-direction: normal;
+          animation-direction: normal;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  content: "";
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  background: -webkit-gradient(linear, right top, left top, from(transparent), color-stop(40%, rgb(202, 200, 200)), color-stop(60%, rgb(170, 170, 170)), to(transparent));
+  background: -o-linear-gradient(right, transparent 0%, rgb(202, 200, 200) 40%, rgb(170, 170, 170) 60%, transparent 100%);
+  background: linear-gradient(to left, transparent 0%, rgb(202, 200, 200) 40%, rgb(170, 170, 170) 60%, transparent 100%);
+  -webkit-transform: translate(-110%, 0%);
+      -ms-transform: translate(-110%, 0%);
+          transform: translate(-110%, 0%);
+}
+
+.skills-button_action--link {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.838);
+}
+
+@-webkit-keyframes bottomfonoverlay1 {
+  0% {
+    -webkit-transform: translate(-110%, 0%);
+            transform: translate(-110%, 0%);
+  }
+  85% {
+    -webkit-transform: translate(-110%, 0%);
+            transform: translate(-110%, 0%);
+  }
+  100% {
+    -webkit-filter: blur(5px);
+            filter: blur(5px);
+    -webkit-transform: translate(100%, 0%);
+            transform: translate(100%, 0%);
+  }
+}
+
+@keyframes bottomfonoverlay1 {
+  0% {
+    -webkit-transform: translate(-110%, 0%);
+            transform: translate(-110%, 0%);
+  }
+  85% {
+    -webkit-transform: translate(-110%, 0%);
+            transform: translate(-110%, 0%);
+  }
+  100% {
+    -webkit-filter: blur(5px);
+            filter: blur(5px);
+    -webkit-transform: translate(100%, 0%);
+            transform: translate(100%, 0%);
+  }
+}
 .skills-title {
   font-size: 20px;
   position: absolute;
@@ -982,6 +1117,31 @@ section .skills-button_action:hover {
           animation-direction: normal;
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
+  overflow: hidden;
+  display: inline-block;
+}
+
+.bottom-blok-backfon::before {
+  -webkit-animation-name: bottomfonoverlay;
+          animation-name: bottomfonoverlay;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-direction: normal;
+          animation-direction: normal;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  content: "";
+  display: inline-block;
+  width: 200%;
+  height: 300%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  background-color: rgba(45, 54, 81, 0.6156862745);
+  -webkit-transform: translate(0%, 0%);
+      -ms-transform: translate(0%, 0%);
+          transform: translate(0%, 0%);
+  opacity: 0.4;
 }
 
 .bottom-navbar {

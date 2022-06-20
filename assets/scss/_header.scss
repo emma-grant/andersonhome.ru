@@ -96,8 +96,6 @@
    height: 100vh;
    overflow-y: hidden;
    position: absolute;
-  
-  //  background-position: 10% 50%;
    background-image: url(https://raw.githubusercontent.com/emma-grant/andersonhome.ru/master/img/scary.jpg);
     @include sm{
       background-position: 50% 50%;
@@ -123,6 +121,7 @@
     0% {
       background-position: 15% 50%;
       opacity: 0.3;
+
     }
     20%{
       opacity: 0.5;
@@ -200,13 +199,18 @@
     margin-top: 10px;
 
     &_button {
-      font-family: Georgia, 'Times New Roman', Times, serif;
+      align-items: center;
+      justify-content: center;
+      display: flex;
+      position: relative;
+      overflow: hidden;
+      font-family: Georgia, 'Times New Roman', Times, 'Times New Roman', Times, serif;
       box-shadow: inset 0px 4px 5px 0px rgb(177, 177, 177);
       width: 163px;
       height: 39px;
       background: linear-gradient(
                       to top,
-                      rgba(51, 50, 50, 0.655), $blue );
+                      rgba(168, 168, 168, 0.655), $blue );
       border: 1.5px solid $blue;
       text-align: center;
       color: #dfdfdf;
@@ -218,13 +222,49 @@
         font-size: 0.9em;
         font-family: Georgia, 'Times New Roman', Times, serif;
       }
+//TODO: разобраться почему не меняется шрифт кнопки и при ховер меняется размер текста
          &:hover {
-         background-color:  #f8b705ca;
+         background-color:  #ffbd16d2;
          color: #ffffff;
          transform: scale(1.05, 1.05);
       }
      }
    }
+//TODO: СДЕЛАТЬ ДЕКОМПОЗИЦИЮ
+   .content-bar_button--action{
+    text-decoration: none;
+    color: #ffffffcb;
+   }
+
+   .content-bar_button:before{
+    animation-name: bottomfonoverlay2;
+    animation-duration: 5s;
+    animation-direction: normal;
+    animation-iteration-count: infinite;
+    content: "";
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    background: linear-gradient(to left, transparent 0%, rgb(202, 200, 200) 40%, rgb(170, 170, 170) 60%, transparent 100%);
+    transform: translate( -110%, 0%);
+   }
+
+   @keyframes bottomfonoverlay2 {
+    0%{ 
+      transform: translate( -110%, 0%);
+    }
+      85%{
+        transform: translate( -110%, 0%);
+      }  
+  
+    100%{
+      filter: blur(5px);
+     transform: translate( 100%, 0%);
+    }
+  }
 
    .content-title{
 

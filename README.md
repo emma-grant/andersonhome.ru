@@ -1,1 +1,1 @@
-# andersonhome.ru
+Репозиторий проекта сайта "WWW.ANDERSONHOME.RU"

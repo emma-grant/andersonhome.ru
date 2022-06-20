@@ -242,38 +242,6 @@ body {
       -ms-transform: translate(-110%, 0%);
           transform: translate(-110%, 0%);
 }
-@-webkit-keyframes bottomfonoverlay2 {
-  0% {
-    -webkit-transform: translate(-110%, 0%);
-            transform: translate(-110%, 0%);
-  }
-  85% {
-    -webkit-transform: translate(-110%, 0%);
-            transform: translate(-110%, 0%);
-  }
-  100% {
-    -webkit-filter: blur(5px);
-            filter: blur(5px);
-    -webkit-transform: translate(100%, 0%);
-            transform: translate(100%, 0%);
-  }
-}
-@keyframes bottomfonoverlay2 {
-  0% {
-    -webkit-transform: translate(-110%, 0%);
-            transform: translate(-110%, 0%);
-  }
-  85% {
-    -webkit-transform: translate(-110%, 0%);
-            transform: translate(-110%, 0%);
-  }
-  100% {
-    -webkit-filter: blur(5px);
-            filter: blur(5px);
-    -webkit-transform: translate(100%, 0%);
-            transform: translate(100%, 0%);
-  }
-}
 .content .content-title_text {
   display: inline-block;
   text-shadow: 3px 3px 5px rgb(0, 0, 0);
@@ -324,177 +292,6 @@ body {
   color: #ef1616;
 }
 
-@-webkit-keyframes header-title-accent {
-  0% {
-    opacity: 1;
-  }
-  95% {
-    opacity: 1;
-    -webkit-transform: scale(1, 1);
-            transform: scale(1, 1);
-  }
-  96% {
-    opacity: 0.1;
-  }
-  97% {
-    opacity: 1;
-    -webkit-transform: scale(-1, 1);
-            transform: scale(-1, 1);
-  }
-  98% {
-    opacity: 0.1;
-  }
-  99% {
-    opacity: 1;
-    -webkit-transform: scale(1, 1);
-            transform: scale(1, 1);
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@keyframes header-title-accent {
-  0% {
-    opacity: 1;
-  }
-  95% {
-    opacity: 1;
-    -webkit-transform: scale(1, 1);
-            transform: scale(1, 1);
-  }
-  96% {
-    opacity: 0.1;
-  }
-  97% {
-    opacity: 1;
-    -webkit-transform: scale(-1, 1);
-            transform: scale(-1, 1);
-  }
-  98% {
-    opacity: 0.1;
-  }
-  99% {
-    opacity: 1;
-    -webkit-transform: scale(1, 1);
-            transform: scale(1, 1);
-  }
-  100% {
-    opacity: 1;
-  }
-}
-@-webkit-keyframes header-title-accent_2 {
-  0% {
-    opacity: 1;
-  }
-  1% {
-    opacity: 0;
-  }
-  2% {
-    opacity: 1;
-  }
-  3% {
-    opacity: 0.1;
-  }
-  4% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-@keyframes header-title-accent_2 {
-  0% {
-    opacity: 1;
-  }
-  1% {
-    opacity: 0;
-  }
-  2% {
-    opacity: 1;
-  }
-  3% {
-    opacity: 0.1;
-  }
-  4% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-@-webkit-keyframes header-title {
-  0% {
-    opacity: 1;
-    color: rgb(177, 0, 0);
-    -webkit-filter: blur(5px);
-            filter: blur(5px);
-  }
-  30% {
-    -webkit-filter: blur(0px);
-            filter: blur(0px);
-  }
-  50% {
-    color: rgb(214, 34, 34);
-  }
-  90% {
-    -webkit-filter: blur(0px);
-            filter: blur(0px);
-  }
-  97% {
-    opacity: 1;
-    color: rgb(255, 255, 255);
-  }
-  98% {
-    opacity: 0.2;
-  }
-  99% {
-    opacity: 1;
-    color: rgb(255, 255, 255);
-  }
-  100% {
-    -webkit-filter: blur(5px);
-            filter: blur(5px);
-    opacity: 1;
-    color: rgb(255, 255, 255);
-  }
-}
-@keyframes header-title {
-  0% {
-    opacity: 1;
-    color: rgb(177, 0, 0);
-    -webkit-filter: blur(5px);
-            filter: blur(5px);
-  }
-  30% {
-    -webkit-filter: blur(0px);
-            filter: blur(0px);
-  }
-  50% {
-    color: rgb(214, 34, 34);
-  }
-  90% {
-    -webkit-filter: blur(0px);
-            filter: blur(0px);
-  }
-  97% {
-    opacity: 1;
-    color: rgb(255, 255, 255);
-  }
-  98% {
-    opacity: 0.2;
-  }
-  99% {
-    opacity: 1;
-    color: rgb(255, 255, 255);
-  }
-  100% {
-    -webkit-filter: blur(5px);
-            filter: blur(5px);
-    opacity: 1;
-    color: rgb(255, 255, 255);
-  }
-}
 .container {
   width: 100%;
   height: 100vh;
@@ -1563,6 +1360,22 @@ section .skills-button_action:hover {
             transform: scale(1, 1);
   }
 }
+@-webkit-keyframes bottomfonoverlay2 {
+  0% {
+    -webkit-transform: translate(-110%, 0%);
+            transform: translate(-110%, 0%);
+  }
+  85% {
+    -webkit-transform: translate(-110%, 0%);
+            transform: translate(-110%, 0%);
+  }
+  100% {
+    -webkit-filter: blur(5px);
+            filter: blur(5px);
+    -webkit-transform: translate(100%, 0%);
+            transform: translate(100%, 0%);
+  }
+}
 @keyframes bottomfonoverlay2 {
   0% {
     -webkit-transform: translate(-110%, 0%);
@@ -1577,6 +1390,35 @@ section .skills-button_action:hover {
             filter: blur(5px);
     -webkit-transform: translate(100%, 0%);
             transform: translate(100%, 0%);
+  }
+}
+@-webkit-keyframes header-title-accent {
+  0% {
+    opacity: 1;
+  }
+  95% {
+    opacity: 1;
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+  }
+  96% {
+    opacity: 0.1;
+  }
+  97% {
+    opacity: 1;
+    -webkit-transform: scale(-1, 1);
+            transform: scale(-1, 1);
+  }
+  98% {
+    opacity: 0.1;
+  }
+  99% {
+    opacity: 1;
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+  }
+  100% {
+    opacity: 1;
   }
 }
 @keyframes header-title-accent {
@@ -1608,6 +1450,26 @@ section .skills-button_action:hover {
     opacity: 1;
   }
 }
+@-webkit-keyframes header-title-accent_2 {
+  0% {
+    opacity: 1;
+  }
+  1% {
+    opacity: 0;
+  }
+  2% {
+    opacity: 1;
+  }
+  3% {
+    opacity: 0.1;
+  }
+  4% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 @keyframes header-title-accent_2 {
   0% {
     opacity: 1;
@@ -1626,6 +1488,42 @@ section .skills-button_action:hover {
   }
   100% {
     opacity: 1;
+  }
+}
+@-webkit-keyframes header-title {
+  0% {
+    opacity: 1;
+    color: rgb(177, 0, 0);
+    -webkit-filter: blur(5px);
+            filter: blur(5px);
+  }
+  30% {
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+  }
+  50% {
+    color: rgb(214, 34, 34);
+  }
+  90% {
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+  }
+  97% {
+    opacity: 1;
+    color: rgb(255, 255, 255);
+  }
+  98% {
+    opacity: 0.2;
+  }
+  99% {
+    opacity: 1;
+    color: rgb(255, 255, 255);
+  }
+  100% {
+    -webkit-filter: blur(5px);
+            filter: blur(5px);
+    opacity: 1;
+    color: rgb(255, 255, 255);
   }
 }
 @keyframes header-title {

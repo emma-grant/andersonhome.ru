@@ -1,0 +1,352 @@
+// ЗОМБИ В БЛОКЕ ABOUT
+
+@keyframes img-zomby {
+ 0%{
+   transform: translate(-100%, 0%);
+   background-size: 10%;
+   background-image: url(https://raw.githubusercontent.com/emma-grant/andersonhome.ru/master/app/img/scull10.png);
+ }
+ 10%{
+   transform: translate(3%, 0%);
+   background-size: 150%;
+   transform: rotate(1turn);
+   background-image: url(https://raw.githubusercontent.com/emma-grant/andersonhome.ru/master/app/img/scull10.png);
+ }
+  11%{
+     background-size: 110%;
+     background-image: url(https://raw.githubusercontent.com/emma-grant/andersonhome.ru/master/app/img/scull10.png);
+   }
+ 13%{
+     background-size: 135%;
+     background-image: url(https://raw.githubusercontent.com/emma-grant/andersonhome.ru/master/app/img/scull10.png);
+   }
+ 15%{
+     background-size: 125%;
+     background-image: url(https://raw.githubusercontent.com/emma-grant/andersonhome.ru/master/app/img/scull10.png);
+   }
+ 17%{
+     background-size: 130%;
+
+   }
+   50%{
+     background-size: 130%;
+     background-image: url(https://raw.githubusercontent.com/emma-grant/andersonhome.ru/master/app/img/scull10.png);
+   }
+   51%{
+     background-size: 110%;
+     background-image: url(https://raw.githubusercontent.com/emma-grant/andersonhome.ru/master/app/img/scull10.png);
+   }
+ 53%{
+   background-size: 145%;
+   background-image: url(https://raw.githubusercontent.com/emma-grant/andersonhome.ru/master/app/img/scull10.png);
+   }
+ 54%{
+   background-size: 115%;
+   background-image: url(https://raw.githubusercontent.com/emma-grant/andersonhome.ru/master/app/img/scull10.png);
+   }
+ 56%{
+   background-size: 140%;
+   }
+  58%{
+     background-size: 120%;
+     background-image: url(https://raw.githubusercontent.com/emma-grant/andersonhome.ru/master/app/img/scull10.png);
+   }
+   60%{
+     background-size: 135%;
+     background-image: url(https://raw.githubusercontent.com/emma-grant/andersonhome.ru/master/app/img/scull10.png);
+   }
+ 63%{
+   background-size: 130%;
+   background-image: url(https://raw.githubusercontent.com/emma-grant/andersonhome.ru/master/app/img/scull10.png);
+   }
+ 
+ 
+ 90%{
+   transform: translate(0%, 0%);
+   background-size: 130%;
+   background-image: url(https://raw.githubusercontent.com/emma-grant/andersonhome.ru/master/app/img/scull10.png);
+ }
+ 92%{
+   transform: translate(0%, 0%);
+   background-size: 150%;
+   transform: rotate(0deg);
+   background-image: url(https://raw.githubusercontent.com/emma-grant/andersonhome.ru/master/app/img/scull10.png);
+ }
+ 
+ 100%{
+   background-size: 0%;
+   transform: rotate(2turn);
+   background-image: url(https://raw.githubusercontent.com/emma-grant/andersonhome.ru/master/app/img/scull10.png);
+ }
+}
+
+// СЛАЙДШОУ ФОТО
+
+@keyframes anime {
+ 0% {
+  transform: translateX(1500px);
+ }
+
+ 100% {
+  transform: translateX(-1500px);
+ }
+}
+
+//АНИМАЦИЯ ИКОНОК НИЗ И МЕЛЬКАНИЕ КЛОУН
+
+@include sm{
+ @keyframes bottom-icon {
+   0%{
+ color: rgb(207, 0, 0);
+ 
+   }
+   40%{
+ transform: rotate(0turn);
+ color: rgb(207, 0, 0);
+ font-size: 40px;
+   }
+   52%{
+     transform: rotate(1turn);
+    font-size: 10px;
+     color: rgba(0, 0, 0, 0.984);
+   }
+   65%{
+     transform: rotate(0turn);
+     color: rgb(207, 0, 0);
+     font-size: 40px;
+   }
+   100%{
+     color: rgb(207, 0, 0);
+   
+   }
+ }
+ }
+ @keyframes scarymoment {
+   0%{
+ opacity: 0;
+   }
+   44%{
+     opacity: 0;
+   }
+   45%{
+     opacity: 1;
+   }
+   46%{
+     opacity: 0;
+   }
+   47%{
+     opacity: 1;
+   }
+    48%{
+ opacity: 0;
+   }
+    49%{
+ opacity: 1;
+   }
+    60%{
+ opacity: 0;
+   }
+   94%{
+     opacity: 0;
+       }
+   95%{
+     opacity: 1;
+   }
+   96%{
+     opacity: 0;
+   }
+   97%{
+     opacity: 1;
+   }
+    98%{
+ opacity: 0;
+   }
+    99%{
+ opacity: 1;
+   }
+    100%{
+ opacity: 0;
+   }
+ }
+
+//БЛЕСК КНОПКИ ПОСЛЕ БЛОКА КОНТЕНТА С ФОТО
+
+ @keyframes bottomfonoverlay1 {
+  0%{ 
+    transform: translate( -110%, 0%);
+  }
+    85%{
+      transform: translate( -110%, 0%);
+    }  
+
+  100%{
+    filter: blur(5px);
+   transform: translate( 100%, 0%);
+  }
+}
+
+//АНИМАЦИЯ ФОНА HEADER
+
+@keyframes backfon {
+ 0% {
+   background-position: 15% 50%;
+   opacity: 0.3;
+
+ }
+ 20%{
+   opacity: 0.5;
+ }
+ 33%{
+   opacity: 0.8;
+   transform: scale(1.1, 1.1);
+ }
+ 66%{
+   opacity: 0.9;
+   transform: scale(1.2, 1.2);
+ }
+ 
+ 98%{
+   opacity: 1;
+ }
+ 99%{
+   opacity: 0.3;
+ }
+ 100% {
+   background-position: 90% 50%;
+   opacity: 1;
+   transform: scale(1, 1);
+ }
+}
+
+
+@keyframes backfon1 {
+ 0% {
+   background-position: 0% 50%;
+   opacity: 0.3;
+ }
+ 20%{
+   opacity: 0.5;
+ }
+ 33%{
+   opacity: 0.8;
+   transform: scale(1.1, 1.1);
+ }
+ 66%{
+   opacity: 0.9;
+   transform: scale(1.2, 1.2);
+   
+ }
+ 98%{
+   opacity: 1;
+ }
+ 99%{
+   opacity: 0.3;
+ }
+ 100% {
+   background-position: 100% 50%;
+   opacity: 1;
+   transform: scale(1, 1);
+ }
+}
+
+//БЛЕСК КНОПОК В HEADER
+
+@keyframes bottomfonoverlay2 {
+ 0%{ 
+   transform: translate( -110%, 0%);
+ }
+   85%{
+     transform: translate( -110%, 0%);
+   }  
+
+ 100%{
+   filter: blur(5px);
+  transform: translate( 100%, 0%);
+ }
+}
+
+//АНИМАЦИЯ ЗАГОЛОВОК HEADER
+
+@keyframes  header-title-accent {
+ 0%{
+opacity: 1;
+
+ }
+ 95%{
+   opacity: 1;
+   transform:scale(1,1);
+ }
+ 96%{
+   opacity: 0.1;
+ }
+ 97%{
+   opacity: 1;
+   transform:scale(-1,1);
+ }
+ 98%{
+   opacity: 0.1;
+ }
+ 99%{
+   opacity: 1;
+   transform:scale(1,1);
+ }
+ 100%{
+   opacity: 1;
+   
+ }
+}
+@keyframes  header-title-accent_2 {
+ 0%{
+   opacity: 1;
+ }
+ 1%{
+   opacity: 0;
+ }
+ 2%{
+   opacity: 1;
+ }
+ 3%{
+   opacity: 0.1;
+ }
+ 4%{
+   opacity: 1;
+ }
+
+ 100%{
+   opacity: 1;
+ }
+}
+@keyframes header-title {
+ 0%{
+   opacity: 1;
+   color: rgb(177, 0, 0);
+   filter: blur(5px);
+ }
+ 30%{
+   filter: blur(0px);
+ }
+ 50%{
+   color: rgb(214, 34, 34);
+   
+ }
+ 90%{
+   filter: blur(0px);
+ }
+ 97%{
+   opacity: 1;
+   color: rgb(255, 255, 255);
+   
+ }
+ 98%{
+   opacity: 0.2;
+ }
+ 99%{
+   opacity: 1;
+   color: rgb(255, 255, 255);
+ }
+ 100%{
+   filter: blur(5px);
+   opacity: 1;
+   color: rgb(255, 255, 255);
+ }
+}

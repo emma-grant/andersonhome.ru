@@ -116,67 +116,9 @@
      opacity: 0.4;
     }
   }
-  @keyframes backfon {
-    0% {
-      background-position: 15% 50%;
-      opacity: 0.3;
-
-    }
-    20%{
-      opacity: 0.5;
-    }
-    33%{
-      opacity: 0.8;
-      transform: scale(1.1, 1.1);
-    }
-    66%{
-      opacity: 0.9;
-      transform: scale(1.2, 1.2);
-    }
-    
-    98%{
-      opacity: 1;
-    }
-    99%{
-      opacity: 0.3;
-    }
-    100% {
-      background-position: 90% 50%;
-      opacity: 1;
-      transform: scale(1, 1);
-    }
-   }
+  
  }
- @keyframes backfon1 {
-  0% {
-    background-position: 0% 50%;
-    opacity: 0.3;
-  }
-  20%{
-    opacity: 0.5;
-  }
-  33%{
-    opacity: 0.8;
-    transform: scale(1.1, 1.1);
-  }
-  66%{
-    // background-position: 50% 50%;
-    opacity: 0.9;
-    transform: scale(1.2, 1.2);
-    
-  }
-  98%{
-    opacity: 1;
-  }
-  99%{
-    opacity: 0.3;
-  }
-  100% {
-    background-position: 100% 50%;
-    opacity: 1;
-    transform: scale(1, 1);
-  }
- }
+ 
 
  
 
@@ -251,19 +193,7 @@
     transform: translate( -110%, 0%);
    }
 
-   @keyframes bottomfonoverlay2 {
-    0%{ 
-      transform: translate( -110%, 0%);
-    }
-      85%{
-        transform: translate( -110%, 0%);
-      }  
   
-    100%{
-      filter: blur(5px);
-     transform: translate( 100%, 0%);
-    }
-  }
 
    .content-title{
 
@@ -317,89 +247,7 @@
    }
    
 
- @keyframes  header-title-accent {
-  0%{
-opacity: 1;
-
-  }
-  95%{
-    opacity: 1;
-    transform:scale(1,1);
-  }
-  96%{
-    opacity: 0.1;
-  }
-  97%{
-    opacity: 1;
-    transform:scale(-1,1);
-  }
-  98%{
-    opacity: 0.1;
-  }
-  99%{
-    opacity: 1;
-    transform:scale(1,1);
-  }
-  100%{
-    opacity: 1;
-    
-  }
- }
- @keyframes  header-title-accent_2 {
-  0%{
-    opacity: 1;
-  }
-  1%{
-    opacity: 0;
-  }
-  2%{
-    opacity: 1;
-  }
-  3%{
-    opacity: 0.1;
-  }
-  4%{
-    opacity: 1;
-  }
  
-  100%{
-    opacity: 1;
-  }
- }
-@keyframes header-title {
-  0%{
-    opacity: 1;
-    color: rgb(177, 0, 0);
-    filter: blur(5px);
-  }
-  30%{
-    filter: blur(0px);
-  }
-  50%{
-    color: rgb(214, 34, 34);
-    
-  }
-  90%{
-    filter: blur(0px);
-  }
-  97%{
-    opacity: 1;
-    color: rgb(255, 255, 255);
-    
-  }
-  98%{
-    opacity: 0.2;
-  }
-  99%{
-    opacity: 1;
-    color: rgb(255, 255, 255);
-  }
-  100%{
-    filter: blur(5px);
-    opacity: 1;
-    color: rgb(255, 255, 255);
-  }
-}
 
 
 

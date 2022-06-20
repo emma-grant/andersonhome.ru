@@ -117,19 +117,7 @@ section {
   color: rgba(255, 255, 255, 0.838);
 }
 
-@keyframes bottomfonoverlay1 {
-  0%{ 
-    transform: translate( -110%, 0%);
-  }
-    85%{
-      transform: translate( -110%, 0%);
-    }  
 
-  100%{
-    filter: blur(5px);
-   transform: translate( 100%, 0%);
-  }
-}
 
 
 .skills-title {

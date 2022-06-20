@@ -150,132 +150,7 @@ body {
   position: absolute;
   opacity: 0.4;
 }
-@-webkit-keyframes backfon {
-  0% {
-    background-position: 15% 50%;
-    opacity: 0.3;
-  }
-  20% {
-    opacity: 0.5;
-  }
-  33% {
-    opacity: 0.8;
-    -webkit-transform: scale(1.1, 1.1);
-            transform: scale(1.1, 1.1);
-  }
-  66% {
-    opacity: 0.9;
-    -webkit-transform: scale(1.2, 1.2);
-            transform: scale(1.2, 1.2);
-  }
-  98% {
-    opacity: 1;
-  }
-  99% {
-    opacity: 0.3;
-  }
-  100% {
-    background-position: 90% 50%;
-    opacity: 1;
-    -webkit-transform: scale(1, 1);
-            transform: scale(1, 1);
-  }
-}
-@keyframes backfon {
-  0% {
-    background-position: 15% 50%;
-    opacity: 0.3;
-  }
-  20% {
-    opacity: 0.5;
-  }
-  33% {
-    opacity: 0.8;
-    -webkit-transform: scale(1.1, 1.1);
-            transform: scale(1.1, 1.1);
-  }
-  66% {
-    opacity: 0.9;
-    -webkit-transform: scale(1.2, 1.2);
-            transform: scale(1.2, 1.2);
-  }
-  98% {
-    opacity: 1;
-  }
-  99% {
-    opacity: 0.3;
-  }
-  100% {
-    background-position: 90% 50%;
-    opacity: 1;
-    -webkit-transform: scale(1, 1);
-            transform: scale(1, 1);
-  }
-}
 
-@-webkit-keyframes backfon1 {
-  0% {
-    background-position: 0% 50%;
-    opacity: 0.3;
-  }
-  20% {
-    opacity: 0.5;
-  }
-  33% {
-    opacity: 0.8;
-    -webkit-transform: scale(1.1, 1.1);
-            transform: scale(1.1, 1.1);
-  }
-  66% {
-    opacity: 0.9;
-    -webkit-transform: scale(1.2, 1.2);
-            transform: scale(1.2, 1.2);
-  }
-  98% {
-    opacity: 1;
-  }
-  99% {
-    opacity: 0.3;
-  }
-  100% {
-    background-position: 100% 50%;
-    opacity: 1;
-    -webkit-transform: scale(1, 1);
-            transform: scale(1, 1);
-  }
-}
-
-@keyframes backfon1 {
-  0% {
-    background-position: 0% 50%;
-    opacity: 0.3;
-  }
-  20% {
-    opacity: 0.5;
-  }
-  33% {
-    opacity: 0.8;
-    -webkit-transform: scale(1.1, 1.1);
-            transform: scale(1.1, 1.1);
-  }
-  66% {
-    opacity: 0.9;
-    -webkit-transform: scale(1.2, 1.2);
-            transform: scale(1.2, 1.2);
-  }
-  98% {
-    opacity: 1;
-  }
-  99% {
-    opacity: 0.3;
-  }
-  100% {
-    background-position: 100% 50%;
-    opacity: 1;
-    -webkit-transform: scale(1, 1);
-            transform: scale(1, 1);
-  }
-}
 .content {
   position: absolute;
   top: 0px;
@@ -664,6 +539,13 @@ body {
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
+.container-text_h1 {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: beige;
+}
+
 .container-img {
   -webkit-animation-name: img-zomby;
           animation-name: img-zomby;
@@ -679,178 +561,6 @@ body {
   background-size: 130%;
 }
 
-@-webkit-keyframes img-zomby {
-  0% {
-    -webkit-transform: translate(-100%, 0%);
-            transform: translate(-100%, 0%);
-    background-size: 10%;
-    background-image: url(https://raw.githubusercontent.com/emma-grant/andersonhome.ru/master/app/img/scull10.png);
-  }
-  10% {
-    -webkit-transform: translate(3%, 0%);
-            transform: translate(3%, 0%);
-    background-size: 150%;
-    -webkit-transform: rotate(1turn);
-            transform: rotate(1turn);
-    background-image: url(https://raw.githubusercontent.com/emma-grant/andersonhome.ru/master/app/img/scull10.png);
-  }
-  11% {
-    background-size: 110%;
-    background-image: url(https://raw.githubusercontent.com/emma-grant/andersonhome.ru/master/app/img/scull10.png);
-  }
-  13% {
-    background-size: 135%;
-    background-image: url(https://raw.githubusercontent.com/emma-grant/andersonhome.ru/master/app/img/scull10.png);
-  }
-  15% {
-    background-size: 125%;
-    background-image: url(https://raw.githubusercontent.com/emma-grant/andersonhome.ru/master/app/img/scull10.png);
-  }
-  17% {
-    background-size: 130%;
-  }
-  50% {
-    background-size: 130%;
-    background-image: url(https://raw.githubusercontent.com/emma-grant/andersonhome.ru/master/app/img/scull10.png);
-  }
-  51% {
-    background-size: 110%;
-    background-image: url(https://raw.githubusercontent.com/emma-grant/andersonhome.ru/master/app/img/scull10.png);
-  }
-  53% {
-    background-size: 145%;
-    background-image: url(https://raw.githubusercontent.com/emma-grant/andersonhome.ru/master/app/img/scull10.png);
-  }
-  54% {
-    background-size: 115%;
-    background-image: url(https://raw.githubusercontent.com/emma-grant/andersonhome.ru/master/app/img/scull10.png);
-  }
-  56% {
-    background-size: 140%;
-  }
-  58% {
-    background-size: 120%;
-    background-image: url(https://raw.githubusercontent.com/emma-grant/andersonhome.ru/master/app/img/scull10.png);
-  }
-  60% {
-    background-size: 135%;
-    background-image: url(https://raw.githubusercontent.com/emma-grant/andersonhome.ru/master/app/img/scull10.png);
-  }
-  63% {
-    background-size: 130%;
-    background-image: url(https://raw.githubusercontent.com/emma-grant/andersonhome.ru/master/app/img/scull10.png);
-  }
-  90% {
-    -webkit-transform: translate(0%, 0%);
-            transform: translate(0%, 0%);
-    background-size: 130%;
-    background-image: url(https://raw.githubusercontent.com/emma-grant/andersonhome.ru/master/app/img/scull10.png);
-  }
-  92% {
-    -webkit-transform: translate(0%, 0%);
-            transform: translate(0%, 0%);
-    background-size: 150%;
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-    background-image: url(https://raw.githubusercontent.com/emma-grant/andersonhome.ru/master/app/img/scull10.png);
-  }
-  100% {
-    background-size: 0%;
-    -webkit-transform: rotate(2turn);
-            transform: rotate(2turn);
-    background-image: url(https://raw.githubusercontent.com/emma-grant/andersonhome.ru/master/app/img/scull10.png);
-  }
-}
-
-@keyframes img-zomby {
-  0% {
-    -webkit-transform: translate(-100%, 0%);
-            transform: translate(-100%, 0%);
-    background-size: 10%;
-    background-image: url(https://raw.githubusercontent.com/emma-grant/andersonhome.ru/master/app/img/scull10.png);
-  }
-  10% {
-    -webkit-transform: translate(3%, 0%);
-            transform: translate(3%, 0%);
-    background-size: 150%;
-    -webkit-transform: rotate(1turn);
-            transform: rotate(1turn);
-    background-image: url(https://raw.githubusercontent.com/emma-grant/andersonhome.ru/master/app/img/scull10.png);
-  }
-  11% {
-    background-size: 110%;
-    background-image: url(https://raw.githubusercontent.com/emma-grant/andersonhome.ru/master/app/img/scull10.png);
-  }
-  13% {
-    background-size: 135%;
-    background-image: url(https://raw.githubusercontent.com/emma-grant/andersonhome.ru/master/app/img/scull10.png);
-  }
-  15% {
-    background-size: 125%;
-    background-image: url(https://raw.githubusercontent.com/emma-grant/andersonhome.ru/master/app/img/scull10.png);
-  }
-  17% {
-    background-size: 130%;
-  }
-  50% {
-    background-size: 130%;
-    background-image: url(https://raw.githubusercontent.com/emma-grant/andersonhome.ru/master/app/img/scull10.png);
-  }
-  51% {
-    background-size: 110%;
-    background-image: url(https://raw.githubusercontent.com/emma-grant/andersonhome.ru/master/app/img/scull10.png);
-  }
-  53% {
-    background-size: 145%;
-    background-image: url(https://raw.githubusercontent.com/emma-grant/andersonhome.ru/master/app/img/scull10.png);
-  }
-  54% {
-    background-size: 115%;
-    background-image: url(https://raw.githubusercontent.com/emma-grant/andersonhome.ru/master/app/img/scull10.png);
-  }
-  56% {
-    background-size: 140%;
-  }
-  58% {
-    background-size: 120%;
-    background-image: url(https://raw.githubusercontent.com/emma-grant/andersonhome.ru/master/app/img/scull10.png);
-  }
-  60% {
-    background-size: 135%;
-    background-image: url(https://raw.githubusercontent.com/emma-grant/andersonhome.ru/master/app/img/scull10.png);
-  }
-  63% {
-    background-size: 130%;
-    background-image: url(https://raw.githubusercontent.com/emma-grant/andersonhome.ru/master/app/img/scull10.png);
-  }
-  90% {
-    -webkit-transform: translate(0%, 0%);
-            transform: translate(0%, 0%);
-    background-size: 130%;
-    background-image: url(https://raw.githubusercontent.com/emma-grant/andersonhome.ru/master/app/img/scull10.png);
-  }
-  92% {
-    -webkit-transform: translate(0%, 0%);
-            transform: translate(0%, 0%);
-    background-size: 150%;
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-    background-image: url(https://raw.githubusercontent.com/emma-grant/andersonhome.ru/master/app/img/scull10.png);
-  }
-  100% {
-    background-size: 0%;
-    -webkit-transform: rotate(2turn);
-            transform: rotate(2turn);
-    background-image: url(https://raw.githubusercontent.com/emma-grant/andersonhome.ru/master/app/img/scull10.png);
-  }
-}
-.container-text_h1 {
-  font-family: Georgia, "Times New Roman", Times, serif;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  color: beige;
-}
-
 .footer-backfon {
   height: 70vh;
   margin: 10px 0px 0px 0px;
@@ -859,7 +569,9 @@ body {
 
 .img {
   background-image: url(https://raw.githubusercontent.com/emma-grant/andersonhome.ru/master/img/scary4.jpg);
-  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   background-position: 25% 10%;
   height: inherit;
   font-size: 3rem;
@@ -945,27 +657,6 @@ body {
           transform: rotate(45deg);
 }
 
-@-webkit-keyframes anime {
-  0% {
-    -webkit-transform: translateX(1500px);
-            transform: translateX(1500px);
-  }
-  100% {
-    -webkit-transform: translateX(-1500px);
-            transform: translateX(-1500px);
-  }
-}
-
-@keyframes anime {
-  0% {
-    -webkit-transform: translateX(1500px);
-            transform: translateX(1500px);
-  }
-  100% {
-    -webkit-transform: translateX(-1500px);
-            transform: translateX(-1500px);
-  }
-}
 .blok-img {
   max-height: 100%;
   max-width: 100%;
@@ -1108,39 +799,6 @@ section .skills-button_action:hover {
   color: rgba(255, 255, 255, 0.838);
 }
 
-@-webkit-keyframes bottomfonoverlay1 {
-  0% {
-    -webkit-transform: translate(-110%, 0%);
-            transform: translate(-110%, 0%);
-  }
-  85% {
-    -webkit-transform: translate(-110%, 0%);
-            transform: translate(-110%, 0%);
-  }
-  100% {
-    -webkit-filter: blur(5px);
-            filter: blur(5px);
-    -webkit-transform: translate(100%, 0%);
-            transform: translate(100%, 0%);
-  }
-}
-
-@keyframes bottomfonoverlay1 {
-  0% {
-    -webkit-transform: translate(-110%, 0%);
-            transform: translate(-110%, 0%);
-  }
-  85% {
-    -webkit-transform: translate(-110%, 0%);
-            transform: translate(-110%, 0%);
-  }
-  100% {
-    -webkit-filter: blur(5px);
-            filter: blur(5px);
-    -webkit-transform: translate(100%, 0%);
-            transform: translate(100%, 0%);
-  }
-}
 .skills-title {
   font-size: 20px;
   position: absolute;
@@ -1469,6 +1127,192 @@ section .skills-button_action:hover {
   color: rgb(255, 204, 0);
   display: inline-block;
 }
+
+@-webkit-keyframes img-zomby {
+  0% {
+    -webkit-transform: translate(-100%, 0%);
+            transform: translate(-100%, 0%);
+    background-size: 10%;
+    background-image: url(https://raw.githubusercontent.com/emma-grant/andersonhome.ru/master/app/img/scull10.png);
+  }
+  10% {
+    -webkit-transform: translate(3%, 0%);
+            transform: translate(3%, 0%);
+    background-size: 150%;
+    -webkit-transform: rotate(1turn);
+            transform: rotate(1turn);
+    background-image: url(https://raw.githubusercontent.com/emma-grant/andersonhome.ru/master/app/img/scull10.png);
+  }
+  11% {
+    background-size: 110%;
+    background-image: url(https://raw.githubusercontent.com/emma-grant/andersonhome.ru/master/app/img/scull10.png);
+  }
+  13% {
+    background-size: 135%;
+    background-image: url(https://raw.githubusercontent.com/emma-grant/andersonhome.ru/master/app/img/scull10.png);
+  }
+  15% {
+    background-size: 125%;
+    background-image: url(https://raw.githubusercontent.com/emma-grant/andersonhome.ru/master/app/img/scull10.png);
+  }
+  17% {
+    background-size: 130%;
+  }
+  50% {
+    background-size: 130%;
+    background-image: url(https://raw.githubusercontent.com/emma-grant/andersonhome.ru/master/app/img/scull10.png);
+  }
+  51% {
+    background-size: 110%;
+    background-image: url(https://raw.githubusercontent.com/emma-grant/andersonhome.ru/master/app/img/scull10.png);
+  }
+  53% {
+    background-size: 145%;
+    background-image: url(https://raw.githubusercontent.com/emma-grant/andersonhome.ru/master/app/img/scull10.png);
+  }
+  54% {
+    background-size: 115%;
+    background-image: url(https://raw.githubusercontent.com/emma-grant/andersonhome.ru/master/app/img/scull10.png);
+  }
+  56% {
+    background-size: 140%;
+  }
+  58% {
+    background-size: 120%;
+    background-image: url(https://raw.githubusercontent.com/emma-grant/andersonhome.ru/master/app/img/scull10.png);
+  }
+  60% {
+    background-size: 135%;
+    background-image: url(https://raw.githubusercontent.com/emma-grant/andersonhome.ru/master/app/img/scull10.png);
+  }
+  63% {
+    background-size: 130%;
+    background-image: url(https://raw.githubusercontent.com/emma-grant/andersonhome.ru/master/app/img/scull10.png);
+  }
+  90% {
+    -webkit-transform: translate(0%, 0%);
+            transform: translate(0%, 0%);
+    background-size: 130%;
+    background-image: url(https://raw.githubusercontent.com/emma-grant/andersonhome.ru/master/app/img/scull10.png);
+  }
+  92% {
+    -webkit-transform: translate(0%, 0%);
+            transform: translate(0%, 0%);
+    background-size: 150%;
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+    background-image: url(https://raw.githubusercontent.com/emma-grant/andersonhome.ru/master/app/img/scull10.png);
+  }
+  100% {
+    background-size: 0%;
+    -webkit-transform: rotate(2turn);
+            transform: rotate(2turn);
+    background-image: url(https://raw.githubusercontent.com/emma-grant/andersonhome.ru/master/app/img/scull10.png);
+  }
+}
+
+@keyframes img-zomby {
+  0% {
+    -webkit-transform: translate(-100%, 0%);
+            transform: translate(-100%, 0%);
+    background-size: 10%;
+    background-image: url(https://raw.githubusercontent.com/emma-grant/andersonhome.ru/master/app/img/scull10.png);
+  }
+  10% {
+    -webkit-transform: translate(3%, 0%);
+            transform: translate(3%, 0%);
+    background-size: 150%;
+    -webkit-transform: rotate(1turn);
+            transform: rotate(1turn);
+    background-image: url(https://raw.githubusercontent.com/emma-grant/andersonhome.ru/master/app/img/scull10.png);
+  }
+  11% {
+    background-size: 110%;
+    background-image: url(https://raw.githubusercontent.com/emma-grant/andersonhome.ru/master/app/img/scull10.png);
+  }
+  13% {
+    background-size: 135%;
+    background-image: url(https://raw.githubusercontent.com/emma-grant/andersonhome.ru/master/app/img/scull10.png);
+  }
+  15% {
+    background-size: 125%;
+    background-image: url(https://raw.githubusercontent.com/emma-grant/andersonhome.ru/master/app/img/scull10.png);
+  }
+  17% {
+    background-size: 130%;
+  }
+  50% {
+    background-size: 130%;
+    background-image: url(https://raw.githubusercontent.com/emma-grant/andersonhome.ru/master/app/img/scull10.png);
+  }
+  51% {
+    background-size: 110%;
+    background-image: url(https://raw.githubusercontent.com/emma-grant/andersonhome.ru/master/app/img/scull10.png);
+  }
+  53% {
+    background-size: 145%;
+    background-image: url(https://raw.githubusercontent.com/emma-grant/andersonhome.ru/master/app/img/scull10.png);
+  }
+  54% {
+    background-size: 115%;
+    background-image: url(https://raw.githubusercontent.com/emma-grant/andersonhome.ru/master/app/img/scull10.png);
+  }
+  56% {
+    background-size: 140%;
+  }
+  58% {
+    background-size: 120%;
+    background-image: url(https://raw.githubusercontent.com/emma-grant/andersonhome.ru/master/app/img/scull10.png);
+  }
+  60% {
+    background-size: 135%;
+    background-image: url(https://raw.githubusercontent.com/emma-grant/andersonhome.ru/master/app/img/scull10.png);
+  }
+  63% {
+    background-size: 130%;
+    background-image: url(https://raw.githubusercontent.com/emma-grant/andersonhome.ru/master/app/img/scull10.png);
+  }
+  90% {
+    -webkit-transform: translate(0%, 0%);
+            transform: translate(0%, 0%);
+    background-size: 130%;
+    background-image: url(https://raw.githubusercontent.com/emma-grant/andersonhome.ru/master/app/img/scull10.png);
+  }
+  92% {
+    -webkit-transform: translate(0%, 0%);
+            transform: translate(0%, 0%);
+    background-size: 150%;
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+    background-image: url(https://raw.githubusercontent.com/emma-grant/andersonhome.ru/master/app/img/scull10.png);
+  }
+  100% {
+    background-size: 0%;
+    -webkit-transform: rotate(2turn);
+            transform: rotate(2turn);
+    background-image: url(https://raw.githubusercontent.com/emma-grant/andersonhome.ru/master/app/img/scull10.png);
+  }
+}
+@-webkit-keyframes anime {
+  0% {
+    -webkit-transform: translateX(1500px);
+            transform: translateX(1500px);
+  }
+  100% {
+    -webkit-transform: translateX(-1500px);
+            transform: translateX(-1500px);
+  }
+}
+@keyframes anime {
+  0% {
+    -webkit-transform: translateX(1500px);
+            transform: translateX(1500px);
+  }
+  100% {
+    -webkit-transform: translateX(-1500px);
+            transform: translateX(-1500px);
+  }
+}
 @-webkit-keyframes scarymoment {
   0% {
     opacity: 0;
@@ -1561,6 +1405,263 @@ section .skills-button_action:hover {
   }
   100% {
     opacity: 0;
+  }
+}
+@-webkit-keyframes bottomfonoverlay1 {
+  0% {
+    -webkit-transform: translate(-110%, 0%);
+            transform: translate(-110%, 0%);
+  }
+  85% {
+    -webkit-transform: translate(-110%, 0%);
+            transform: translate(-110%, 0%);
+  }
+  100% {
+    -webkit-filter: blur(5px);
+            filter: blur(5px);
+    -webkit-transform: translate(100%, 0%);
+            transform: translate(100%, 0%);
+  }
+}
+@keyframes bottomfonoverlay1 {
+  0% {
+    -webkit-transform: translate(-110%, 0%);
+            transform: translate(-110%, 0%);
+  }
+  85% {
+    -webkit-transform: translate(-110%, 0%);
+            transform: translate(-110%, 0%);
+  }
+  100% {
+    -webkit-filter: blur(5px);
+            filter: blur(5px);
+    -webkit-transform: translate(100%, 0%);
+            transform: translate(100%, 0%);
+  }
+}
+@-webkit-keyframes backfon {
+  0% {
+    background-position: 15% 50%;
+    opacity: 0.3;
+  }
+  20% {
+    opacity: 0.5;
+  }
+  33% {
+    opacity: 0.8;
+    -webkit-transform: scale(1.1, 1.1);
+            transform: scale(1.1, 1.1);
+  }
+  66% {
+    opacity: 0.9;
+    -webkit-transform: scale(1.2, 1.2);
+            transform: scale(1.2, 1.2);
+  }
+  98% {
+    opacity: 1;
+  }
+  99% {
+    opacity: 0.3;
+  }
+  100% {
+    background-position: 90% 50%;
+    opacity: 1;
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+  }
+}
+@keyframes backfon {
+  0% {
+    background-position: 15% 50%;
+    opacity: 0.3;
+  }
+  20% {
+    opacity: 0.5;
+  }
+  33% {
+    opacity: 0.8;
+    -webkit-transform: scale(1.1, 1.1);
+            transform: scale(1.1, 1.1);
+  }
+  66% {
+    opacity: 0.9;
+    -webkit-transform: scale(1.2, 1.2);
+            transform: scale(1.2, 1.2);
+  }
+  98% {
+    opacity: 1;
+  }
+  99% {
+    opacity: 0.3;
+  }
+  100% {
+    background-position: 90% 50%;
+    opacity: 1;
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+  }
+}
+@-webkit-keyframes backfon1 {
+  0% {
+    background-position: 0% 50%;
+    opacity: 0.3;
+  }
+  20% {
+    opacity: 0.5;
+  }
+  33% {
+    opacity: 0.8;
+    -webkit-transform: scale(1.1, 1.1);
+            transform: scale(1.1, 1.1);
+  }
+  66% {
+    opacity: 0.9;
+    -webkit-transform: scale(1.2, 1.2);
+            transform: scale(1.2, 1.2);
+  }
+  98% {
+    opacity: 1;
+  }
+  99% {
+    opacity: 0.3;
+  }
+  100% {
+    background-position: 100% 50%;
+    opacity: 1;
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+  }
+}
+@keyframes backfon1 {
+  0% {
+    background-position: 0% 50%;
+    opacity: 0.3;
+  }
+  20% {
+    opacity: 0.5;
+  }
+  33% {
+    opacity: 0.8;
+    -webkit-transform: scale(1.1, 1.1);
+            transform: scale(1.1, 1.1);
+  }
+  66% {
+    opacity: 0.9;
+    -webkit-transform: scale(1.2, 1.2);
+            transform: scale(1.2, 1.2);
+  }
+  98% {
+    opacity: 1;
+  }
+  99% {
+    opacity: 0.3;
+  }
+  100% {
+    background-position: 100% 50%;
+    opacity: 1;
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+  }
+}
+@keyframes bottomfonoverlay2 {
+  0% {
+    -webkit-transform: translate(-110%, 0%);
+            transform: translate(-110%, 0%);
+  }
+  85% {
+    -webkit-transform: translate(-110%, 0%);
+            transform: translate(-110%, 0%);
+  }
+  100% {
+    -webkit-filter: blur(5px);
+            filter: blur(5px);
+    -webkit-transform: translate(100%, 0%);
+            transform: translate(100%, 0%);
+  }
+}
+@keyframes header-title-accent {
+  0% {
+    opacity: 1;
+  }
+  95% {
+    opacity: 1;
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+  }
+  96% {
+    opacity: 0.1;
+  }
+  97% {
+    opacity: 1;
+    -webkit-transform: scale(-1, 1);
+            transform: scale(-1, 1);
+  }
+  98% {
+    opacity: 0.1;
+  }
+  99% {
+    opacity: 1;
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes header-title-accent_2 {
+  0% {
+    opacity: 1;
+  }
+  1% {
+    opacity: 0;
+  }
+  2% {
+    opacity: 1;
+  }
+  3% {
+    opacity: 0.1;
+  }
+  4% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes header-title {
+  0% {
+    opacity: 1;
+    color: rgb(177, 0, 0);
+    -webkit-filter: blur(5px);
+            filter: blur(5px);
+  }
+  30% {
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+  }
+  50% {
+    color: rgb(214, 34, 34);
+  }
+  90% {
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+  }
+  97% {
+    opacity: 1;
+    color: rgb(255, 255, 255);
+  }
+  98% {
+    opacity: 0.2;
+  }
+  99% {
+    opacity: 1;
+    color: rgb(255, 255, 255);
+  }
+  100% {
+    -webkit-filter: blur(5px);
+            filter: blur(5px);
+    opacity: 1;
+    color: rgb(255, 255, 255);
   }
 }
 @media (max-width: 575.8px) {

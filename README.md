@@ -1,2 +1,2 @@
 Репозиторий проекта сайта "WWW.ANDERSONHOME.RU"
-![Myphoto](./img/.jpg)
+![Myphoto](./img/scull10.png)

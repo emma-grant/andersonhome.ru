@@ -314,7 +314,7 @@ body {
 
 .container-text {
   font-size: 100%;
-  height: 100%;
+  max-height: 100%;
   width: 70%;
   background-color: rgba(0, 255, 255, 0);
   color: rgba(255, 255, 255, 0.717);
@@ -333,7 +333,7 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   text-align: justify;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-family: cursive;
 }
 
 p::first-letter {
@@ -341,10 +341,11 @@ p::first-letter {
 }
 
 .container-text_h1 {
+  text-shadow: 5px 5px 7px rgb(115, 84, 81);
   font-family: Georgia, "Times New Roman", Times, serif;
   text-transform: uppercase;
   letter-spacing: 2px;
-  color: beige;
+  color: rgba(245, 245, 220, 0.897);
 }
 
 .container-img {
@@ -363,17 +364,16 @@ p::first-letter {
 }
 
 .footer-backfon {
-  height: 70vh;
+  height: 80vh;
   margin: 10px 0px 0px 0px;
   position: relative;
 }
 
 .img {
   background-image: url(https://raw.githubusercontent.com/emma-grant/andersonhome.ru/master/img/scary4.jpg);
-  background-position: center;
+  background-position: center 20%;
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: 25% 10%;
   height: inherit;
   font-size: 3rem;
   z-index: -1;
@@ -390,10 +390,10 @@ p::first-letter {
 .slide-fon {
   background-color: rgba(255, 255, 255, 0);
   width: 100%;
-  height: 55%;
+  height: 65%;
   position: absolute;
   z-index: 1;
-  top: 22.5%;
+  top: 10%;
 }
 
 .slide-blok {
@@ -1747,6 +1747,16 @@ section .skills-button_action:hover {
   .content .content-title_text {
     font-weight: 400;
     font-size: 2em;
+  }
+  .container {
+    height: 80vh;
+  }
+  .container-text {
+    font-family: "Roboto Serif", serif;
+  }
+  .container-text_h1 {
+    font-size: 1em;
+    text-align: center;
   }
   .footer-backfon {
     height: 70vh;

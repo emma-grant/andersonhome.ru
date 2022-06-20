@@ -12,13 +12,17 @@ section {
  .skills {
   display: grid;
   grid-template-areas:
-    "a1 a1 a2 a3"
-    "a4 a5 a5 a6"
-    "a7 a8 a9 a6";
+  "a1 a1 a8 a2 a5 a5"
+  "a1 a1 a3 a2 a6 a6"
+  "a4 a9 a9 a7 a6 a6";
+  
+    // "a1 a1 a2 a3"
+    // "a4 a5 a5 a6"
+    // "a7 a8 a9 a6";
   /* высота столбцов */
   grid-template-rows: 33.3vh 33.3vh 33.3vh;
   /* ширина столбцов */
-  grid-template-columns: repeat(25%);
+  grid-template-columns: 16.6% 16.6% 16.6% 16.6% 16.6% 16.6%;
   padding: 5px 5px 5px 5px;
   @include sm{
     display: grid;

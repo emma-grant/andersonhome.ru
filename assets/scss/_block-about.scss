@@ -1,0 +1,125 @@
+.container{
+ width: 100%;
+ height: 100vh;
+ background-color: rgb(0, 0, 0);
+ position: relative;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ gap: 40px;
+ padding: 20px;
+ box-sizing: border-box;
+}
+.container-text{
+ font-size: 100%;
+ height: 100%;
+ width: 70%;
+ background-color: rgba(0, 255, 255, 0);
+ color: rgba(255, 255, 255, 0.717);
+ overflow: hidden;
+ display: flex;
+ align-items: center;
+ flex-direction: column;
+ justify-content: center;
+ text-align: center;
+ font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.container-img{
+ animation-name: img-zomby;
+ animation-iteration-count: infinite;
+ animation-duration: 10s;
+ height: 100%;
+ width: 30%;
+ overflow: hidden;
+
+ background-position:center;
+ background-repeat: no-repeat;
+ background-size: 130%;
+}
+@keyframes img-zomby {
+ 0%{
+   transform: translate(-100%, 0%);
+   background-size: 10%;
+   background-image: url(https://raw.githubusercontent.com/emma-grant/andersonhome.ru/master/app/img/scull10.png);
+ }
+ 10%{
+   transform: translate(3%, 0%);
+   background-size: 150%;
+   transform: rotate(1turn);
+   background-image: url(https://raw.githubusercontent.com/emma-grant/andersonhome.ru/master/app/img/scull10.png);
+ }
+  11%{
+     background-size: 110%;
+     background-image: url(https://raw.githubusercontent.com/emma-grant/andersonhome.ru/master/app/img/scull10.png);
+   }
+ 13%{
+     background-size: 135%;
+     background-image: url(https://raw.githubusercontent.com/emma-grant/andersonhome.ru/master/app/img/scull10.png);
+   }
+ 15%{
+     background-size: 125%;
+     background-image: url(https://raw.githubusercontent.com/emma-grant/andersonhome.ru/master/app/img/scull10.png);
+   }
+ 17%{
+     background-size: 130%;
+
+   }
+   50%{
+     background-size: 130%;
+     background-image: url(https://raw.githubusercontent.com/emma-grant/andersonhome.ru/master/app/img/scull10.png);
+   }
+   51%{
+     background-size: 110%;
+     background-image: url(https://raw.githubusercontent.com/emma-grant/andersonhome.ru/master/app/img/scull10.png);
+   }
+ 53%{
+   background-size: 145%;
+   background-image: url(https://raw.githubusercontent.com/emma-grant/andersonhome.ru/master/app/img/scull10.png);
+   }
+ 54%{
+   background-size: 115%;
+   background-image: url(https://raw.githubusercontent.com/emma-grant/andersonhome.ru/master/app/img/scull10.png);
+   }
+ 56%{
+   background-size: 140%;
+   }
+  58%{
+     background-size: 120%;
+     background-image: url(https://raw.githubusercontent.com/emma-grant/andersonhome.ru/master/app/img/scull10.png);
+   }
+   60%{
+     background-size: 135%;
+     background-image: url(https://raw.githubusercontent.com/emma-grant/andersonhome.ru/master/app/img/scull10.png);
+   }
+ 63%{
+   background-size: 130%;
+   background-image: url(https://raw.githubusercontent.com/emma-grant/andersonhome.ru/master/app/img/scull10.png);
+   }
+ 
+ 
+ 90%{
+   transform: translate(0%, 0%);
+   background-size: 130%;
+   background-image: url(https://raw.githubusercontent.com/emma-grant/andersonhome.ru/master/app/img/scull10.png);
+ }
+ 92%{
+   transform: translate(0%, 0%);
+   background-size: 150%;
+   transform: rotate(0deg);
+   background-image: url(https://raw.githubusercontent.com/emma-grant/andersonhome.ru/master/app/img/scull10.png);
+ }
+ 
+ 100%{
+   background-size: 0%;
+   transform: rotate(2turn);
+   background-image: url(https://raw.githubusercontent.com/emma-grant/andersonhome.ru/master/app/img/scull10.png);
+ }
+}
+
+.container-text_h1{
+ font-family: Georgia, 'Times New Roman', Times, serif;
+ text-transform: uppercase;
+ letter-spacing: 2px;
+ color: beige;
+}

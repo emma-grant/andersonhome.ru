@@ -1847,7 +1847,7 @@ section .skills-button_action:hover {
   }
   .container-text {
     display: block;
-    font-family: "Roboto Serif", cursive;
+    font-family: "League Gothic", sans-serif;
     width: 85%;
     height: auto;
     -webkit-box-pack: start;

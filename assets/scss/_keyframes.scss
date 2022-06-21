@@ -283,6 +283,7 @@
    transform: scale(1.1, 1.1);
  }
  66%{
+  
    opacity: 0.9;
    transform: scale(1.2, 1.2);
  }
@@ -304,19 +305,32 @@
 @keyframes backfon1 {
  0% {
    background-position: 0% 50%;
-   opacity: 0.3;
+   opacity: 0.4;
+   filter: blur(3px);
  }
  20%{
+  
    opacity: 0.5;
  }
  33%{
+  filter: blur(0px);
    opacity: 0.8;
    transform: scale(1.1, 1.1);
  }
  66%{
    opacity: 0.9;
    transform: scale(1.2, 1.2);
-   
+   filter: grayscale(0);
+ }
+  67%{
+   opacity: 0.9;
+   transform: scale(1.2, 1.2);
+   filter: grayscale(.8);
+ }
+  69%{
+   opacity: 0.9;
+   transform: scale(1.2, 1.2);
+   filter: grayscale(0);
  }
  98%{
    opacity: 1;
@@ -352,8 +366,29 @@
 @keyframes  header-title-accent {
  0%{
 opacity: 1;
-
  }
+ 36%{
+  text-shadow: 0px 0px 0px rgb(0, 0, 0),  0px 0px 0px rgb(0, 0, 0);
+}
+ 35%{
+  text-shadow: 0px 0px 12px rgb(0, 0, 0),  0px 0px 12px rgb(0, 0, 0);
+}
+36%{
+  text-shadow: 0px 0px 0px rgb(0, 0, 0),  0px 0px 0px rgb(0, 0, 0);
+}
+37%{
+  text-shadow: 0px 0px 12px rgb(0, 0, 0),  0px 0px 12px rgb(254, 5, 5);
+}
+38%{
+  text-shadow: 0px 0px 0px rgb(0, 0, 0),  0px 0px 0px rgb(0, 0, 0);
+}
+
+39%{
+  text-shadow: 0px 0px 12px rgb(0, 0, 0),  0px 0px 12px rgb(254, 5, 5);
+}
+40%{
+  text-shadow: 0px 0px 0px rgb(0, 0, 0),  0px 0px 0px rgb(0, 0, 0);
+}
  95%{
    opacity: 1;
    transform:scale(1,1);
@@ -401,14 +436,14 @@ opacity: 1;
 @keyframes header-title {
  0%{
    opacity: 1;
-   color: rgb(177, 0, 0);
+   color: rgb(255, 0, 0);
    filter: blur(5px);
  }
  30%{
    filter: blur(0px);
  }
  50%{
-   color: rgb(214, 34, 34);
+   color: rgb(255, 10, 10);
    
  }
  90%{

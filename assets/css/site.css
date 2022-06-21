@@ -209,7 +209,7 @@ body {
   border-radius: 5px;
 }
 .content .content-bar_button:hover {
-  background-color: rgba(255, 189, 22, 0.8235294118);
+  background-color: #ffb700;
   color: #ffffff;
   -webkit-transform: scale(1.05, 1.05);
       -ms-transform: scale(1.05, 1.05);
@@ -309,6 +309,7 @@ body {
   padding: 20px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  overflow: hidden;
 }
 
 .container-text {
@@ -316,8 +317,7 @@ body {
   font-size: 100%;
   height: auto;
   width: 70%;
-  background-color: rgba(0, 255, 255, 0);
-  color: rgba(255, 255, 255, 0.717);
+  color: rgba(254, 255, 213, 0.717);
   overflow: hidden;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -340,16 +340,27 @@ body {
 p::first-letter {
   padding-left: 20px;
   font-size: 1em;
-  color: rgba(255, 255, 255, 0.881);
+  color: rgba(255, 255, 110, 0.881);
 }
 
 .container-text_h1 {
-  text-shadow: 0px 0px 12px rgb(254, 246, 0), 0px 0px 12px rgb(254, 5, 5);
+  text-shadow: 10px 10px 20px rgb(254, 8, 0), -10px -10px 18px rgb(254, 5, 5);
   font-family: Georgia, "Times New Roman", Times, serif;
   text-transform: uppercase;
-  letter-spacing: 2px;
+  letter-spacing: 3px;
   text-align: center;
-  color: rgba(245, 245, 220, 0.897);
+  margin-bottom: 20px;
+  color: rgb(0, 0, 0);
+  -webkit-animation: about-text;
+          animation: about-text;
+  -webkit-animation-duration: 15s;
+          animation-duration: 15s;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  height: auto;
+  margin-bottom: 30px;
 }
 
 .container-img {
@@ -359,7 +370,7 @@ p::first-letter {
           animation-iteration-count: infinite;
   -webkit-animation-duration: 18s;
           animation-duration: 18s;
-  height: 100%;
+  height: 100vh;
   width: 30%;
   overflow: hidden;
   background-position: center;
@@ -367,6 +378,117 @@ p::first-letter {
   background-size: 130%;
 }
 
+@-webkit-keyframes about-text {
+  0% {
+    text-shadow: 0px 0px 20px rgb(254, 8, 0), 0px 0px 18px rgb(254, 5, 5);
+    opacity: 0.2;
+  }
+  20% {
+    text-shadow: 10px 10px 20px rgb(254, 8, 0), -10px -10px 18px rgb(254, 5, 5);
+    opacity: 1;
+  }
+  28% {
+    text-shadow: 10px 10px 20px rgb(254, 8, 0), -10px -10px 18px rgb(254, 5, 5);
+    opacity: 1;
+  }
+  35% {
+    text-shadow: 0px 0px 20px rgb(254, 8, 0), 0px 0px 18px rgb(254, 5, 5);
+    opacity: 0.1;
+  }
+  40% {
+    text-shadow: 5px 10px 25px rgb(254, 8, 0), -10px -5px 25px rgb(254, 5, 5);
+    opacity: 1;
+  }
+  55% {
+    text-shadow: 3px 5px 20px rgb(254, 8, 0), -5px -3px 18px rgb(254, 5, 5);
+    opacity: 0.8;
+  }
+  67% {
+    text-shadow: 10px 10px 20px rgb(254, 8, 0), -10px -10px 18px rgb(254, 5, 5);
+    opacity: 1;
+  }
+  70% {
+    opacity: 1;
+  }
+  70% {
+    opacity: 1;
+  }
+  71% {
+    opacity: 0;
+  }
+  72% {
+    opacity: 1;
+  }
+  73% {
+    opacity: 0;
+  }
+  74% {
+    opacity: 1;
+  }
+  92% {
+    text-shadow: -10px -10px 30px rgb(254, 8, 0), 10px 10px 30px rgb(254, 5, 5);
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes about-text {
+  0% {
+    text-shadow: 0px 0px 20px rgb(254, 8, 0), 0px 0px 18px rgb(254, 5, 5);
+    opacity: 0.2;
+  }
+  20% {
+    text-shadow: 10px 10px 20px rgb(254, 8, 0), -10px -10px 18px rgb(254, 5, 5);
+    opacity: 1;
+  }
+  28% {
+    text-shadow: 10px 10px 20px rgb(254, 8, 0), -10px -10px 18px rgb(254, 5, 5);
+    opacity: 1;
+  }
+  35% {
+    text-shadow: 0px 0px 20px rgb(254, 8, 0), 0px 0px 18px rgb(254, 5, 5);
+    opacity: 0.1;
+  }
+  40% {
+    text-shadow: 5px 10px 25px rgb(254, 8, 0), -10px -5px 25px rgb(254, 5, 5);
+    opacity: 1;
+  }
+  55% {
+    text-shadow: 3px 5px 20px rgb(254, 8, 0), -5px -3px 18px rgb(254, 5, 5);
+    opacity: 0.8;
+  }
+  67% {
+    text-shadow: 10px 10px 20px rgb(254, 8, 0), -10px -10px 18px rgb(254, 5, 5);
+    opacity: 1;
+  }
+  70% {
+    opacity: 1;
+  }
+  70% {
+    opacity: 1;
+  }
+  71% {
+    opacity: 0;
+  }
+  72% {
+    opacity: 1;
+  }
+  73% {
+    opacity: 0;
+  }
+  74% {
+    opacity: 1;
+  }
+  92% {
+    text-shadow: -10px -10px 30px rgb(254, 8, 0), 10px 10px 30px rgb(254, 5, 5);
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
 .footer-backfon {
   height: 80vh;
   margin: 10px 0px 0px 0px;
@@ -374,21 +496,13 @@ p::first-letter {
 }
 
 .img {
-  background-image: url(https://raw.githubusercontent.com/emma-grant/andersonhome.ru/master/app/img/zombi1.png);
+  background-image: url(https://raw.githubusercontent.com/emma-grant/andersonhome.ru/master/app/img/scull13.png);
   background-position: 10% 50%;
   background-repeat: no-repeat;
-  background-size: 40%;
+  background-size: 20%;
   height: inherit;
   font-size: 3rem;
   z-index: 1;
-}
-.img_overlay {
-  background-color: rgba(0, 0, 0, 0);
-  opacity: 0.4;
-  width: inherit;
-  height: inherit;
-  -webkit-box-shadow: inset 0px 0px 50px 50px black;
-          box-shadow: inset 0px 0px 50px 50px black;
 }
 
 .slide-fon {
@@ -1832,7 +1946,7 @@ section .skills-button_action:hover {
     font-size: 2em;
   }
   .container {
-    height: 100vh;
+    height: auto;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -1847,21 +1961,22 @@ section .skills-button_action:hover {
   }
   .container-text {
     display: block;
-    font-family: "League Gothic", sans-serif;
-    width: 85%;
+    font-family: "Roboto Serif", serif;
+    width: 88%;
     height: auto;
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
-    padding-top: 10px;
+    padding-top: 7px;
   }
   .container-text_h1 {
-    font-size: 1.5em;
+    font-size: 2em;
     text-align: center;
   }
   .container-img {
-    height: 30%;
-    width: 30%;
+    background-size: 40%;
+    height: 50vh;
+    width: 62%;
   }
   .footer-backfon {
     height: 50vh;

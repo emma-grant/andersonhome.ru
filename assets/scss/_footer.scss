@@ -11,30 +11,27 @@
 }
 
 .img{
-  background-image: url(https://raw.githubusercontent.com/emma-grant/andersonhome.ru/master/app/img/zombi1.png);
+  background-image: url(https://raw.githubusercontent.com/emma-grant/andersonhome.ru/master/app/img/scull13.png);
   background-position: 10% 50% ;
   background-repeat: no-repeat;
-  background-size: 40%;
+  background-size: 20%;
   height: inherit;
   font-size: 3rem;
   z-index: 1;
-  // transform: rotate(12deg);
   @include sm{
     background-image: none;
     background-position: center;
-    
   }
-  &_overlay{
-   background-color: rgba(0, 0, 0, 0);
-   opacity: 0.4;
-   width: inherit;
-   height: inherit;
-   box-shadow: inset 0px 0px 50px 50px black;
-  }
+  // &_overlay{
+  //  background-color: rgba(0, 0, 0, 0);
+  //  opacity: 0.4;
+  //  width: inherit;
+  //  height: inherit;
+  //  box-shadow: inset 0px 0px 50px 50px black;
+  // }
  }
  
 .slide-fon {
- //background-color: rgba(255, 255, 255, 0);
  width: 100%;
  height: 65%;
  position: absolute;
@@ -58,7 +55,6 @@
  justify-content: center;
  overflow: hidden;
  border-radius: 50px;
- //background-color: rgba(240, 248, 255, 0);
 
  @include sm{
   left: 15px;

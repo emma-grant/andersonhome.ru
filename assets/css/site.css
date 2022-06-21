@@ -496,13 +496,21 @@ p::first-letter {
 }
 
 .img {
-  background-image: url(https://raw.githubusercontent.com/emma-grant/andersonhome.ru/master/app/img/scull13.png);
-  background-position: 10% 50%;
+  background-image: url(https://raw.githubusercontent.com/emma-grant/andersonhome.ru/master/app/img/бивис.png);
+  background-position: 3% 40%;
   background-repeat: no-repeat;
-  background-size: 20%;
+  background-size: 40%;
   height: inherit;
   font-size: 3rem;
   z-index: 1;
+}
+.img_overlay {
+  background-color: rgba(0, 0, 0, 0.486);
+  opacity: 0.4;
+  width: inherit;
+  height: inherit;
+  -webkit-box-shadow: inset 0px 0px 50px 50px black;
+          box-shadow: inset 0px 0px 50px 50px black;
 }
 
 .slide-fon {
@@ -1034,9 +1042,9 @@ section .skills-button_action:hover {
   display: inline-block;
 }
 .bottom-navbar .icon-list .list-item .item_link:hover {
-  -webkit-transition: 0.7s;
-  -o-transition: 0.7s;
-  transition: 0.7s;
+  -webkit-transition: 0.8s;
+  -o-transition: 0.8s;
+  transition: 0.8s;
   -webkit-transform: rotate(1turn) scale(1.3, 1.3);
       -ms-transform: rotate(1turn) scale(1.3, 1.3);
           transform: rotate(1turn) scale(1.3, 1.3);

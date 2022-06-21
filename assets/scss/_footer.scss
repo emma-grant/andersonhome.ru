@@ -11,10 +11,10 @@
 }
 
 .img{
-  background-image: url(https://raw.githubusercontent.com/emma-grant/andersonhome.ru/master/app/img/scull13.png);
-  background-position: 10% 50% ;
+  background-image: url(https://raw.githubusercontent.com/emma-grant/andersonhome.ru/master/app/img/бивис.png);
+  background-position: 3% 40% ;
   background-repeat: no-repeat;
-  background-size: 20%;
+  background-size: 40%;
   height: inherit;
   font-size: 3rem;
   z-index: 1;
@@ -22,13 +22,13 @@
     background-image: none;
     background-position: center;
   }
-  // &_overlay{
-  //  background-color: rgba(0, 0, 0, 0);
-  //  opacity: 0.4;
-  //  width: inherit;
-  //  height: inherit;
-  //  box-shadow: inset 0px 0px 50px 50px black;
-  // }
+  &_overlay{
+   background-color: rgba(0, 0, 0, 0.486);
+   opacity: 0.4;
+   width: inherit;
+   height: inherit;
+   box-shadow: inset 0px 0px 50px 50px black;
+  }
  }
  
 .slide-fon {

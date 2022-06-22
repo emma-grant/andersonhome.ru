@@ -1,6 +1,6 @@
 .container{
  width: 100%;
- height: 100vh;
+ height: auto;
  position: relative;
  display: flex;
  align-items: center;
@@ -82,7 +82,7 @@ p::first-letter{
  background-size: 130%;
  @include sm{
   background-size: 40%;
-  height: 50vh;
+  height: 70vh;
   width: 62%;
  }
 }

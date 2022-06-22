@@ -294,7 +294,7 @@ body {
 
 .container {
   width: 100%;
-  height: 100vh;
+  height: auto;
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1986,7 +1986,7 @@ section .skills-button_action:hover {
   }
   .container-img {
     background-size: 40%;
-    height: 50vh;
+    height: 70vh;
     width: 62%;
   }
   .footer-backfon {

@@ -157,11 +157,15 @@
       color: #dfdfdf;
       transition: 1s;
       border-radius: 5px;
+
       @include sm{
         width: 29vw;
-        height: 4vh;
+        height: 35px;
         font-size: 0.9em;
         font-family: Georgia, 'Times New Roman', Times, serif;
+      }
+      @include xs{
+        height: 30px;
       }
 //TODO: разобраться почему не меняется шрифт кнопки и при ховер меняется размер текста
          &:hover {
@@ -233,15 +237,21 @@
      display: inline-block;
     
      }
-    
-     @include sm{
+     @include  sm{
       font-weight: 400;
-      font-size: 2em;
+     font-size: 2rem;
+     
+     box-sizing: border-box;
      }
+    @include xs{
+      font-weight: 400;
+      font-size: 1.5rem;
+      margin:0 15px 0 15px;
+    }
     }
    }
   }
-   
+ 
   .navbar-list_item--home {
     color: #ef1616;
    }

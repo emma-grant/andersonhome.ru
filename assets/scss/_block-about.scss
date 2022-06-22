@@ -9,6 +9,7 @@
  padding: 20px;
  box-sizing: border-box;
  overflow: hidden;
+ z-index: 0;
  @include sm{
   height: auto;
   flex-direction: column;

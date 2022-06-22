@@ -53,7 +53,8 @@ p::first-letter{
 .container-text_h1{
  text-shadow: 10px 10px 20px rgb(254, 8, 0),  -10px -10px 18px rgb(254, 5, 5);
  font-family: Georgia, 'Times New Roman', Times, serif;
- text-transform: uppercase;;
+ background-clip: text;
+ text-transform: uppercase;
  letter-spacing: 3px;
  text-align: center;
  margin-bottom: 20px;
